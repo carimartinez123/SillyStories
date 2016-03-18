@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context="carimartinez123.test.MainActivity"
+tools:showIn="@layout/activity_main"
+android:background="#9df4ed">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skye's Silly Stories"
+        android:id="@+id/textAppTitle"
+        android:editable="true"
+        android:textColor="#481a80"
+        android:textColorHighlight="#36f8e8"
+        android:textSize="@dimen/abc_action_bar_default_height_material"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+    <StackView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stackView" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1.55"
+            android:padding="20dp">
+
+            <Button
+                android:layout_width="285dp"
+                android:layout_height="90dp"
+                android:text="New Story"
+                android:id="@+id/newStoryButton"
+                android:layout_weight="0"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:background="#fb42e3"
+                android:padding="20dp"
+                android:layout_margin="20dp"
+                android:onClick="startStory" />
+
+            <Button
+                android:layout_width="285dp"
+                android:layout_height="90dp"
+                android:text="Saved Story"
+                android:id="@+id/savedStoryButton"
+                android:layout_weight="0"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:background="#fb42e3"
+                android:padding="20dp"
+                android:layout_margin="20dp"
+                android:onClick="startStory" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</RelativeLayout>

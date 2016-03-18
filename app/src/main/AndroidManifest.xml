@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="carimartinez123.sillystories">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NewStoryActivity"
+            android:label="@string/title_activity_new_story"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="carimartinez123.sillystories.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SavedStoryActivity"
+            android:label="@string/title_activity_saved_story"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="carimartinez123.sillystories.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CharacterSelectionActivity"
+            android:label="@string/title_activity_character_selection"
+            android:parentActivityName=".StoryMenuActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="carimartinez123.sillystories.StoryMenuActivity" />
+        </activity>
+        <activity
+            android:name=".NounSelectionActivity"
+            android:label="@string/title_activity_noun_selection"
+            android:parentActivityName=".CharacterSelectionActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="carimartinez123.sillystories.CharacterSelectionActivity" />
+        </activity>
+        <activity
+            android:name=".AdjectiveSelectionActivity"
+            android:label="@string/title_activity_adjective_selection"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EndMenuActivity"
+            android:label="@string/title_activity_end_menu"
+            android:parentActivityName=".BookActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="carimartinez123.sillystories.BookActivity" />
+        </activity>
+        <activity
+            android:name=".BookActivity"
+            android:label="@string/title_activity_book"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
