@@ -11,7 +11,7 @@ android:paddingTop="@dimen/activity_vertical_margin"
 app:layout_behavior="@string/appbar_scrolling_view_behavior"
 tools:context="carimartinez123.test.MainActivity"
 tools:showIn="@layout/activity_main"
-android:background="#9df4ed">
+android:background="#ffffff">
 
 <LinearLayout
     android:orientation="vertical"
@@ -23,12 +23,12 @@ android:background="#9df4ed">
         android:layout_height="wrap_content"
         android:text="Skye's Silly Stories"
         android:id="@+id/textAppTitle"
-        android:editable="true"
-        android:textColor="#481a80"
-        android:textColorHighlight="#36f8e8"
+        android:editable="false"
+        android:textColor="#000000"
         android:textSize="@dimen/abc_action_bar_default_height_material"
         android:textStyle="bold"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:background="#03e9fe" />
 
     <StackView
         android:layout_width="wrap_content"
@@ -53,30 +53,37 @@ android:background="#9df4ed">
             android:padding="20dp">
 
             <Button
-                android:layout_width="285dp"
-                android:layout_height="90dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="New Story"
                 android:id="@+id/newStoryButton"
                 android:layout_weight="0"
                 android:textStyle="bold"
                 android:textSize="24dp"
-                android:background="#fb42e3"
-                android:padding="20dp"
-                android:layout_margin="20dp"
-                android:onClick="startStory" />
+                android:background="#5afe5d"
+                android:padding="30dp"
+                android:onClick="startStory"
+                android:allowUndo="true"
+                android:layout_margin="30dp" />
 
             <Button
-                android:layout_width="285dp"
-                android:layout_height="90dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Saved Story"
                 android:id="@+id/savedStoryButton"
                 android:layout_weight="0"
                 android:textStyle="bold"
                 android:textSize="24dp"
-                android:background="#fb42e3"
-                android:padding="20dp"
-                android:layout_margin="20dp"
-                android:onClick="startStory" />
+                android:background="#ff1500"
+                android:onClick="startStory"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="30dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="30dp" />
         </LinearLayout>
 
     </LinearLayout>

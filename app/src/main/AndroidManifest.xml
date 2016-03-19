@@ -39,11 +39,11 @@
         <activity
             android:name=".CharacterSelectionActivity"
             android:label="@string/title_activity_character_selection"
-            android:parentActivityName=".StoryMenuActivity"
+            android:parentActivityName=".NewStoryActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="carimartinez123.sillystories.StoryMenuActivity" />
+                android:value="carimartinez123.sillystories.NewStoryActivity" />
         </activity>
         <activity
             android:name=".NounSelectionActivity"
