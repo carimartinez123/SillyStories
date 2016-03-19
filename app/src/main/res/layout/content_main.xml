@@ -46,30 +46,30 @@ android:background="#ffffff">
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:gravity="top|center_horizontal"
-        android:paddingTop="100dp">
+        android:paddingTop="100dp"
+        android:weightSum="5">
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="New Story"
             android:id="@+id/newStoryButton"
-            android:layout_weight="0"
+            android:layout_weight="1"
+            android:layout_height="0dip"
+            android:layout_width="fill_parent"
             android:textStyle="bold"
-            android:textSize="24dp"
-            android:padding="30dp"
+            android:textSize="36dp"
             android:onClick="startStory"
             android:allowUndo="true"
             android:layout_margin="30dp"
             style="@style/redButtonStyle" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dip"
+            android:layout_width="fill_parent"
             android:text="Saved Story"
             android:id="@+id/savedStoryButton"
-            android:layout_weight="0"
+            android:layout_weight="1"
             android:textStyle="bold"
-            android:textSize="24dp"
+            android:textSize="36dp"
             android:onClick="startStory"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
