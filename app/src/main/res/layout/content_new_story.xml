@@ -29,19 +29,120 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Select a story:"
-            android:layout_weight="0.08"
             android:id="@+id/newStorySelectText"
             android:textSize="48dp"
             android:textStyle="bold" />
 
         <Button
-            android:layout_width="370dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ride to the Airport"
-            android:id="@+id/rideButton"
-            android:layout_weight="0.08"
+            android:text="@string/story1"
+            android:id="@+id/story1Button"
             android:textSize="24dp"
-            android:onClick="goToSelections" />
+            android:onClick="goToSelections"
+            style="@style/greenButtonStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/story2"
+            android:id="@+id/story2Button"
+            android:textSize="24dp"
+            android:onClick="goToSelections"
+            style="@style/redButtonStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/story3"
+            android:id="@+id/story3Button"
+            android:textSize="24dp"
+            android:onClick="goToSelections"
+            style="@style/blueButtonStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/story4"
+            android:id="@+id/story4Button"
+            android:textSize="24dp"
+            android:onClick="goToSelections"
+            style="@style/greenButtonStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/story5"
+            android:id="@+id/story5Button"
+            android:textSize="24dp"
+            android:onClick="goToSelections"
+            style="@style/redButtonStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/story6"
+            android:id="@+id/story6Button"
+            android:textSize="24dp"
+            android:onClick="goToSelections"
+            style="@style/blueButtonStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/story7"
+            android:id="@+id/story7Button"
+            android:textSize="24dp"
+            android:onClick="goToSelections"
+            style="@style/greenButtonStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/story8"
+            android:id="@+id/story8Button"
+            android:textSize="24dp"
+            android:onClick="goToSelections"
+            style="@style/redButtonStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/story9"
+            android:id="@+id/story9Button"
+            android:textSize="24dp"
+            android:onClick="goToSelections"
+            style="@style/blueButtonStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/story10"
+            android:id="@+id/story10Button"
+            android:textSize="24dp"
+            android:onClick="goToSelections"
+            style="@style/greenButtonStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp" />
+
 
     </LinearLayout>
 </RelativeLayout>
