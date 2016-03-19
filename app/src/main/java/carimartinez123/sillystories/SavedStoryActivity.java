@@ -1,5 +1,7 @@
 package carimartinez123.sillystories;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -15,7 +17,11 @@ import java.util.ArrayList;
 
 public class SavedStoryActivity extends AppCompatActivity {
     private Spinner savedStorySpinner;
+    private static ArrayAdapter<String> adapter;
     private static File fileToDelete = null;
+    private static ArrayList<String> filenameList;
+    private Bundle savedInstanceState;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,26 +29,37 @@ public class SavedStoryActivity extends AppCompatActivity {
         savedStorySpinner = (Spinner) findViewById(R.id.savedStorySpinner);
         initSpinner();
 
+    }
 
+    @Override
+    public void onResume() {
 
-
+        super.onResume();
+        setContentView(R.layout.activity_saved_story);
+        savedStorySpinner = (Spinner) findViewById(R.id.savedStorySpinner);
+        initSpinner();
 
     }
 
+
     public void initSpinner(){
         savedStorySpinner = (Spinner) findViewById(R.id.savedStorySpinner);
-        File[] fileList = getFilesDir().listFiles();
-        ArrayList<String> filenameList = new ArrayList();
-        for(int i = 0; i < fileList.length; i++){
-            filenameList.add(fileList[i].getName());
-        }
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(SavedStoryActivity.this, android.R.layout.simple_spinner_item, filenameList);
+        filenameList = getSavedFiles();
+        adapter = new ArrayAdapter<>(SavedStoryActivity.this, android.R.layout.simple_spinner_item, filenameList);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         savedStorySpinner.setAdapter(adapter);
         addListenerOnSpinnerItemSelection();
     }
 
-
+    public ArrayList<String> getSavedFiles()
+    {
+        File[] fileList = getFilesDir().listFiles();
+        ArrayList<String> filenameList = new ArrayList();
+        for(int i = 0; i < fileList.length; i++){
+            filenameList.add(fileList[i].getName());
+        }
+        return filenameList;
+    }
 
     public void addListenerOnSpinnerItemSelection() {
 
@@ -60,12 +77,46 @@ public class SavedStoryActivity extends AppCompatActivity {
 
        if(fileToDelete != null)
        {
-           deleteFile(fileToDelete.getName());
+           AlertDialog confirmDeleteBox = AskOption();
+           confirmDeleteBox.show();
+
        }
 
     }
 
     public static void setFileToDelete(File fileToDelete) {
         SavedStoryActivity.fileToDelete = fileToDelete;
+        filenameList.remove(fileToDelete.getName());
+        adapter.notifyDataSetChanged();
+    }
+
+    private AlertDialog AskOption() {
+        AlertDialog myQuittingDialogBox =new AlertDialog.Builder(this)
+                //set message, title, and icon
+                .setTitle("Delete")
+                .setMessage("Do you want to Delete")
+
+
+                .setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        deleteFile(fileToDelete.getName());
+                        dialog.dismiss();
+                    }
+
+                })
+
+
+
+                .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        dialog.dismiss();
+
+                    }
+                })
+                .create();
+        return myQuittingDialogBox;
+
     }
 }
