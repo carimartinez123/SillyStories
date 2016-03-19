@@ -31,21 +31,12 @@ public class SavedStoryActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onResume() {
-
-        super.onResume();
-        setContentView(R.layout.activity_saved_story);
-        savedStorySpinner = (Spinner) findViewById(R.id.savedStorySpinner);
-        initSpinner();
-
-    }
 
 
     public void initSpinner(){
         savedStorySpinner = (Spinner) findViewById(R.id.savedStorySpinner);
         filenameList = getSavedFiles();
-        adapter = new ArrayAdapter<>(SavedStoryActivity.this, android.R.layout.simple_spinner_item, filenameList);
+        adapter = new ArrayAdapter<>(SavedStoryActivity.this, android.R.layout.simple_spinner_dropdown_item, filenameList);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         savedStorySpinner.setAdapter(adapter);
         addListenerOnSpinnerItemSelection();
@@ -78,6 +69,8 @@ public class SavedStoryActivity extends AppCompatActivity {
        if(fileToDelete != null)
        {
            AlertDialog confirmDeleteBox = AskOption();
+           filenameList.remove(fileToDelete.getName());
+           adapter.notifyDataSetChanged();
            confirmDeleteBox.show();
 
        }
@@ -86,8 +79,7 @@ public class SavedStoryActivity extends AppCompatActivity {
 
     public static void setFileToDelete(File fileToDelete) {
         SavedStoryActivity.fileToDelete = fileToDelete;
-        filenameList.remove(fileToDelete.getName());
-        adapter.notifyDataSetChanged();
+
     }
 
     private AlertDialog AskOption() {

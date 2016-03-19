@@ -26,10 +26,11 @@
             android:id="@+id/pickSavedStoryText"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="54dp" />
+            android:layout_marginTop="54dp"
+            android:textSize="48dp" />
 
         <Spinner
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/savedStorySpinner"
             android:layout_alignParentTop="true"
@@ -40,27 +41,32 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:padding="@dimen/activity_horizontal_margin"
             android:weightSum="5">
 
             <Button
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Start Story"
                 android:id="@+id/startStoryButton"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:onClick="startBook" />
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:onClick="startBook"
+                style="@style/greenButtonStyle" />
 
             <Button
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Delete Story"
                 android:id="@+id/deleteStoryButton"
+                android:layout_margin="@dimen/activity_horizontal_margin"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:onClick="deleteBook" />
+                android:onClick="deleteBook"
+                style="@style/redButtonStyle" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
