@@ -20,6 +20,7 @@
     <string name="story8">Castles and Dragons</string>
     <string name="story9">Splatfest</string>
     <string name="story10">Chasing Cats</string>
+    <string name="title_activity_delete">DeleteActivity</string>
 
 
 </resources>

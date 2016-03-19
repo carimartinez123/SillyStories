@@ -22,6 +22,7 @@ public class SpinnerOnItemSelectedListener implements AdapterView.OnItemSelected
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         String savedStoryFilename = parent.getItemAtPosition(position).toString();
         File savedStoryFile = new File(MainActivity.appDirectory.toString() + "/" + savedStoryFilename);
+        SavedStoryActivity.setFileToDelete(savedStoryFile);
         System.out.println(savedStoryFile.getName());
         String text = "ERROR READING FILE!";
         try {

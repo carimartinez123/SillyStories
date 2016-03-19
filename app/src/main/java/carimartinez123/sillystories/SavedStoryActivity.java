@@ -15,6 +15,7 @@ import java.util.ArrayList;
 
 public class SavedStoryActivity extends AppCompatActivity {
     private Spinner savedStorySpinner;
+    private static File fileToDelete = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,5 +54,18 @@ public class SavedStoryActivity extends AppCompatActivity {
         Intent intent = new Intent(this, BookActivity.class);
         startActivity(intent);
 
+    }
+
+    public void deleteBook(View v){
+
+       if(fileToDelete != null)
+       {
+           deleteFile(fileToDelete.getName());
+       }
+
+    }
+
+    public static void setFileToDelete(File fileToDelete) {
+        SavedStoryActivity.fileToDelete = fileToDelete;
     }
 }
