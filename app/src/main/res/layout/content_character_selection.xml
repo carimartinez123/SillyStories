@@ -107,7 +107,8 @@
                 android:text="Done"
                 android:id="@+id/doneCharsButton"
                 android:onClick="getCharacters"
-                android:layout_weight="0.12" />
+                android:layout_weight="0.12"
+                style="@style/greenButtonStyle" />
         </LinearLayout>
 
 

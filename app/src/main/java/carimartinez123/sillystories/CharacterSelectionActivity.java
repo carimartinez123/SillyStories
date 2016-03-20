@@ -1,10 +1,12 @@
 package carimartinez123.sillystories;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class CharacterSelectionActivity extends AppCompatActivity {
@@ -22,6 +24,8 @@ public class CharacterSelectionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_character_selection);
         charNum = (TextView) findViewById(R.id.charNumTextView);
         charNum.setText("Pick " + (BookContent.getNumChars() - BookContent.getChars().size()) + " characters:");
+        Button doneButton = (Button) findViewById(R.id.doneCharsButton);
+        doneButton.setEnabled(false);
 
 
     }
@@ -31,6 +35,8 @@ public class CharacterSelectionActivity extends AppCompatActivity {
         super.onResume();
         for(String str: BookContent.getChars())
         {
+            Button doneButton = (Button) findViewById(R.id.doneCharsButton);
+            doneButton.setEnabled(false);
             BookContent.getChars().remove(str);
             updateCharNum();
         }
@@ -51,6 +57,8 @@ public class CharacterSelectionActivity extends AppCompatActivity {
         else
         {
             charNum.setText("Click done!");
+            Button doneButton = (Button) findViewById(R.id.doneCharsButton);
+            doneButton.setEnabled(true);
         }
     }
 
