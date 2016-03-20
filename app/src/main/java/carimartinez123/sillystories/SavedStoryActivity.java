@@ -9,8 +9,10 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -36,7 +38,16 @@ public class SavedStoryActivity extends AppCompatActivity {
     public void initSpinner(){
         savedStorySpinner = (Spinner) findViewById(R.id.savedStorySpinner);
         filenameList = getSavedFiles();
-        adapter = new ArrayAdapter<>(SavedStoryActivity.this, android.R.layout.simple_spinner_dropdown_item, filenameList);
+        adapter = new ArrayAdapter<String>(SavedStoryActivity.this, android.R.layout.simple_spinner_dropdown_item, filenameList){
+            @Override
+            public View getView(int position, View convertView, ViewGroup parent) {
+                View view =super.getView(position, convertView, parent);
+                TextView textView= (TextView) view.findViewById(android.R.id.text1);
+                // do whatever you want with this text view
+                textView.setTextSize(20);
+                return view;
+            }
+        };
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         savedStorySpinner.setAdapter(adapter);
         addListenerOnSpinnerItemSelection();
@@ -69,8 +80,6 @@ public class SavedStoryActivity extends AppCompatActivity {
        if(fileToDelete != null)
        {
            AlertDialog confirmDeleteBox = AskOption();
-           filenameList.remove(fileToDelete.getName());
-           adapter.notifyDataSetChanged();
            confirmDeleteBox.show();
 
        }
@@ -93,6 +102,8 @@ public class SavedStoryActivity extends AppCompatActivity {
 
                     public void onClick(DialogInterface dialog, int whichButton) {
                         deleteFile(fileToDelete.getName());
+                        filenameList.remove(fileToDelete.getName());
+                        adapter.notifyDataSetChanged();
                         dialog.dismiss();
                     }
 
