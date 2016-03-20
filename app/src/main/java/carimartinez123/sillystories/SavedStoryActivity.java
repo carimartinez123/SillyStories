@@ -38,7 +38,8 @@ public class SavedStoryActivity extends AppCompatActivity {
     public void initSpinner(){
         savedStorySpinner = (Spinner) findViewById(R.id.savedStorySpinner);
         filenameList = getSavedFiles();
-        adapter = new ArrayAdapter<String>(SavedStoryActivity.this, android.R.layout.simple_spinner_dropdown_item, filenameList){
+        adapter = new ArrayAdapter<String>(SavedStoryActivity.this, R.layout.spinner_layout, filenameList);
+        /*{
             @Override
             public View getView(int position, View convertView, ViewGroup parent) {
                 View view =super.getView(position, convertView, parent);
@@ -47,7 +48,7 @@ public class SavedStoryActivity extends AppCompatActivity {
                 textView.setTextSize(20);
                 return view;
             }
-        };
+        };*/
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         savedStorySpinner.setAdapter(adapter);
         addListenerOnSpinnerItemSelection();
