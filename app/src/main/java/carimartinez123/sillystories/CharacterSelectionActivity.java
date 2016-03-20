@@ -5,41 +5,101 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
 
 public class CharacterSelectionActivity extends AppCompatActivity {
 
+    private boolean beastBoySelected = false;
+    private boolean starfireSelected = false;
+    private boolean ravenSelected = false;
+    private boolean cyborgSelected = false;
+    private boolean robinSelected = false;
+    
+    private TextView charNum;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_character_selection);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        charNum = (TextView) findViewById(R.id.charNumTextView);
+        charNum.setText("Pick " + (BookContent.getNumChars() - BookContent.getChars().size()) + " characters:");
 
 
+    }
+    @Override
+    public void onResume()
+    {
+        super.onResume();
+        for(String str: BookContent.getChars())
+        {
+            BookContent.getChars().remove(str);
+            updateCharNum();
+        }
+
+    }
+
+
+    private void updateCharNum()
+    {
+        int charsLeft = BookContent.getNumChars() - BookContent.getChars().size();
+        if(charsLeft > 1) {
+            charNum.setText("Pick " + charsLeft + " characters:");
+        }
+        else if (charsLeft == 1)
+        {
+            charNum.setText("Pick " + charsLeft + " character:");
+        }
+        else
+        {
+            charNum.setText("Click done!");
+        }
     }
 
     public void getCharacters(View view)
     {
 
-        if(view.getId() == R.id.beastboyButton) {
-
+        if(view.getId() == R.id.beastboyButton && !beastBoySelected) {
+            beastBoySelected = true;
             BookContent.getChars().add("Beast Boy");
+            updateCharNum();
 
         }
-        else if(view.getId() == R.id.starfireButton) {
-
+        else if(view.getId() == R.id.starfireButton && !starfireSelected) {
+            starfireSelected = true;
             BookContent.getChars().add("Starfire");
+            updateCharNum();
+
 
         }
+        else if(view.getId() == R.id.ravenButton && !ravenSelected) {
+            ravenSelected = true;
+            BookContent.getChars().add("Raven");
+            updateCharNum();
+
+        }
+        else if(view.getId() == R.id.cyborgButton && !cyborgSelected) {
+            cyborgSelected = true;
+            BookContent.getChars().add("Cyborg");
+            updateCharNum();
+
+        }
+        else if(view.getId() == R.id.robinButton && !robinSelected) {
+            robinSelected = true;
+            BookContent.getChars().add("Robin");
+            updateCharNum();
+
+
+        }
+
         else if(view.getId() == R.id.doneCharsButton)
         {
             int i = 0;
-            while(i < BookContent.getChars().size()) {
-                System.out.println(BookContent.getChars().get(i));
-                i++;
+            if(BookContent.getChars().size() != BookContent.getNumChars()) {
+
             }
-            Intent intent = new Intent(this, NounSelectionActivity.class);
-            startActivity(intent);
+            else {
+                Intent intent = new Intent(this, NounSelectionActivity.class);
+                startActivity(intent);
+            }
         }
 
     }

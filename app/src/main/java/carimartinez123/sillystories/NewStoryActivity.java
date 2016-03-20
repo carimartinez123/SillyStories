@@ -25,6 +25,7 @@ public class NewStoryActivity extends AppCompatActivity {
         Intent intent;
         if(view.getId() == R.id.story1Button) {
             BookContent.setTitle("Ride to the Airport");
+            BookContent.generateGrammarTypes("Ride to the Airport");
             intent = new Intent(this, CharacterSelectionActivity.class);
             startActivity(intent);
         }

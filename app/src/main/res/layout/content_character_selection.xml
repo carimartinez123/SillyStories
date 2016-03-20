@@ -11,70 +11,104 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="carimartinez123.test.CharacterSelectionActivity"
     tools:showIn="@layout/activity_character_selection"
-    android:background="#43f9ea">
+    android:background="#FFFFFF">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:weightSum="1">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Pick a character:"
-            android:id="@+id/textView"
+            android:id="@+id/charNumTextView"
             android:editable="true"
             android:textColor="#000000"
             android:textColorHighlight="#36f8e8"
             android:textSize="@dimen/abc_action_bar_default_height_material"
             android:textStyle="bold" />
 
-        <StackView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/stackView" />
-
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="0dp">
+            android:padding="0dp"
+            android:weightSum="5">
 
             <ImageButton
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:scaleType="fitXY"
                 android:id="@+id/starfireButton"
-                android:layout_below="@+id/textView"
+                android:layout_below="@+id/charNumTextView"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="77dp"
                 android:onClick="getCharacters"
-                android:src="@drawable/starfire" />
+                android:src="@drawable/starfire"
+                android:layout_weight="1" />
 
             <ImageButton
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:scaleType="fitXY"
                 android:id="@+id/beastboyButton"
-                android:layout_below="@+id/textView"
+                android:layout_below="@+id/charNumTextView"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="77dp"
                 android:onClick="getCharacters"
                 android:src="@drawable/beastboy" />
-        </LinearLayout>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Done"
-            android:id="@+id/doneCharsButton"
-            android:onClick="getCharacters" />
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:id="@+id/ravenButton"
+                android:layout_below="@+id/charNumTextView"
+                android:layout_centerHorizontal="true"
+                android:onClick="getCharacters"
+                android:src="@drawable/raven"
+                android:layout_weight="0.25" />
+        </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_gravity="bottom"></LinearLayout>
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:weightSum="1">
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/cyborgButton"
+                android:onClick="getCharacters"
+                android:scaleType="fitXY"
+                android:src="@drawable/cyborg" />
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/robinButton"
+                android:src="@drawable/robin"
+                android:scaleType="fitXY"
+                android:onClick="getCharacters" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:id="@+id/doneCharsButton"
+                android:onClick="getCharacters"
+                android:layout_weight="0.12" />
+        </LinearLayout>
 
 
     </LinearLayout>
