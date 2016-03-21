@@ -9,8 +9,9 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="carimartinez123.sillystories.NounSelectionActivity"
-    tools:showIn="@layout/activity_noun_selection">
+    tools:context="carimartinez123.test.NounSelectionActivity"
+    tools:showIn="@layout/activity_noun_selection"
+    android:background="#FFFFFF">
 
     <LinearLayout
         android:orientation="vertical"
@@ -20,50 +21,126 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="167dp">
+            android:layout_height="wrap_content">
 
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="umbrella"
-                android:id="@+id/umbrellaButton"
-                android:onClick="getNouns" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="wig"
-                android:id="@+id/wigButton"
-                android:onClick="getNouns" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="shirt"
-                android:id="@+id/shirtButton"
-                android:onClick="getNouns" />
+                android:text="Pick a noun:"
+                android:id="@+id/nounNumTextView"
+                android:editable="false"
+                android:textColor="#000000"
+                android:textSize="@dimen/abc_action_bar_default_height_material"
+                android:textStyle="bold" />
         </LinearLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="3">
+
+            <Button
+                android:text="@string/noun0"
+                android:id="@+id/noun0Button"
+                android:textSize="36sp"
+                android:onClick="getNouns"
+                style="@style/greenButtonStyle"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="@string/noun1"
+                android:id="@+id/noun1Button"
+                android:textSize="36sp"
+                android:onClick="getNouns"
+                style="@style/redButtonStyle"
+                android:layout_gravity="left"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="@string/noun2"
+                android:id="@+id/noun2Button"
+                android:textSize="36sp"
+                android:onClick="getNouns"
+                style="@style/blueButtonStyle"
+                android:layout_gravity="left"
+                android:layout_margin="10dp" />
+
+
+            <Button
+                android:text="@string/noun3"
+                android:id="@+id/noun3Button"
+                android:textSize="36sp"
+                android:onClick="getNouns"
+                style="@style/redButtonStyle"
+                android:layout_gravity="left"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="@string/noun4"
+                android:id="@+id/noun4Button"
+                android:textSize="36sp"
+                android:onClick="getNouns"
+                style="@style/blueButtonStyle"
+                android:layout_gravity="left"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="@string/noun5"
+                android:id="@+id/noun5Button"
+                android:textSize="36sp"
+                android:onClick="getNouns"
+                style="@style/greenButtonStyle"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="@string/noun6"
+                android:id="@+id/noun6Button"
+                android:textSize="36sp"
+                android:onClick="getNouns"
+                style="@style/greenButtonStyle"
+                android:layout_gravity="left"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="@string/noun7"
+                android:id="@+id/noun7Button"
+                android:textSize="36sp"
+                android:onClick="getNouns"
+                style="@style/redButtonStyle"
+                android:layout_gravity="left"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="@string/noun8"
+                android:id="@+id/noun8Button"
+                android:textSize="36sp"
+                android:onClick="getNouns"
+                style="@style/blueButtonStyle"
+                android:layout_gravity="left"
+                android:layout_margin="10dp" />
+
+        </GridLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="142dp">
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="199dp">
+            android:layout_height="398dp"
+            android:weightSum="1">
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="166dp"
                 android:text="Done"
                 android:id="@+id/doneNounsButton"
                 android:layout_gravity="bottom"
-                android:onClick="getNouns" />
+                android:onClick="getNouns"
+                android:layout_weight="0.20" />
         </LinearLayout>
     </LinearLayout>
+
 
 </RelativeLayout>

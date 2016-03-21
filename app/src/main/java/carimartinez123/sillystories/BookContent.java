@@ -52,15 +52,15 @@ public class BookContent {
                 String ADJ7 = "___";
                 String ADJ8 = "___";
                 
-                String N0 = "___";
-                String N1 = nouns.get(0);
-                String N2 = "___";
-                String N3 = "___";
-                String N4 = "___";
-                String N5 = "___";
-                String N6 = "___";
-                String N7 = "___";
-                String N8 = "___";
+                String N0 = nouns.get(0);
+                String N1 = nouns.get(1);
+                String N2 = nouns.get(2);
+                String N3 = nouns.get(3);
+                String N4 = nouns.get(4);
+                String N5 = nouns.get(5);
+                String N6 = nouns.get(6);
+                String N7 = nouns.get(7);
+                String N8 = nouns.get(8);
                 
                 String NUM1 = "___";
                 String NUM2 = "___";

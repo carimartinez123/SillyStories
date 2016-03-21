@@ -102,7 +102,7 @@ public class CharacterSelectionActivity extends AppCompatActivity {
             updateCharNum();
 
         }
-        else if(view.getId() == R.id.charButton4 && !char6Selected) {
+        else if(view.getId() == R.id.charButton4 && !char4Selected) {
             char6Selected = true;
             BookContent.getChars().add(char4);
             updateCharNum();

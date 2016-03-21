@@ -20,6 +20,15 @@
     <string name="story8">Castles and Dragons</string>
     <string name="story9">Splatfest</string>
     <string name="story10">Chasing Cats</string>
+    <string name="noun0">"wig"</string>
+    <string name="noun1">"umbrella"</string>
+    <string name="noun2">"soccer ball"</string>
+    <string name="noun3">"rock"</string>
+    <string name="noun4">"blanket"</string>
+    <string name="noun5">"clam"</string>
+    <string name="noun6">"sock"</string>
+    <string name="noun7">"roly poly"</string>
+    <string name="noun8">"trophy"</string>
     <string name="title_activity_delete">DeleteActivity</string>
 
 

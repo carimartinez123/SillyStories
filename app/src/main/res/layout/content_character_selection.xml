@@ -24,9 +24,8 @@
             android:layout_height="wrap_content"
             android:text="Pick a character:"
             android:id="@+id/charNumTextView"
-            android:editable="true"
+            android:editable="false"
             android:textColor="#000000"
-            android:textColorHighlight="#36f8e8"
             android:textSize="@dimen/abc_action_bar_default_height_material"
             android:textStyle="bold" />
 
