@@ -44,13 +44,13 @@ public class BookContent {
                 String PL = "___";
                 
                 String ADJ1 = adjs.get(0);
-                String ADJ2 = adjs.get(0);
-                String ADJ3 = adjs.get(0);
-                String ADJ4 = adjs.get(0);
-                String ADJ5 = "___";
-                String ADJ6 = "___";
-                String ADJ7 = "___";
-                String ADJ8 = "___";
+                String ADJ2 = adjs.get(1);
+                String ADJ3 = adjs.get(2);
+                String ADJ4 = adjs.get(3);
+                String ADJ5 = adjs.get(4);
+                String ADJ6 = adjs.get(5);
+                String ADJ7 = adjs.get(6);
+                String ADJ8 = adjs.get(7);
                 
                 String N0 = nouns.get(0);
                 String N1 = nouns.get(1);

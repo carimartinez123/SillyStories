@@ -9,8 +9,9 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="carimartinez123.sillystories.AdjectiveSelectionActivity"
-    tools:showIn="@layout/activity_adjective_selection">
+    tools:context="carimartinez123.test.AdjectiveSelectionActivity"
+    tools:showIn="@layout/activity_adjective_selection"
+    android:background="#FFFFFF">
 
     <LinearLayout
         android:orientation="vertical"
@@ -20,34 +21,118 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="150dp">
+            android:layout_height="wrap_content">
 
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="stinky"
-                android:id="@+id/stinkyButton"
-                android:onClick="getAdjs" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="silly"
-                android:id="@+id/sillyButton"
-                android:onClick="getAdjs" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="suspicious"
-                android:id="@+id/suspiciousButton"
-                android:onClick="getAdjs" />
+                android:text="Pick an adjective:"
+                android:id="@+id/adjNumTextView"
+                android:editable="false"
+                android:textColor="#000000"
+                android:textSize="@dimen/abc_action_bar_default_height_material"
+                android:textStyle="bold" />
         </LinearLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:layout_marginTop="50dp">
+
+            <Button
+                android:text="@string/adj0"
+                android:id="@+id/adj0Button"
+                android:textSize="36sp"
+                android:onClick="getAdjs"
+                style="@style/greenButtonStyle"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="@string/adj1"
+                android:id="@+id/adj1Button"
+                android:textSize="36sp"
+                android:onClick="getAdjs"
+                style="@style/redButtonStyle"
+                android:layout_gravity="left"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="@string/adj2"
+                android:id="@+id/adj2Button"
+                android:textSize="36sp"
+                android:onClick="getAdjs"
+                style="@style/blueButtonStyle"
+                android:layout_gravity="left"
+                android:layout_margin="10dp" />
+
+
+            <Button
+                android:text="@string/adj3"
+                android:id="@+id/adj3Button"
+                android:textSize="36sp"
+                android:onClick="getAdjs"
+                style="@style/redButtonStyle"
+                android:layout_gravity="left"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="@string/adj4"
+                android:id="@+id/adj4Button"
+                android:textSize="36sp"
+                android:onClick="getAdjs"
+                style="@style/blueButtonStyle"
+                android:layout_gravity="left"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="@string/adj5"
+                android:id="@+id/adj5Button"
+                android:textSize="36sp"
+                android:onClick="getAdjs"
+                style="@style/greenButtonStyle"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="@string/adj6"
+                android:id="@+id/adj6Button"
+                android:textSize="36sp"
+                android:onClick="getAdjs"
+                style="@style/greenButtonStyle"
+                android:layout_gravity="left"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="@string/adj7"
+                android:id="@+id/adj7Button"
+                android:textSize="36sp"
+                android:onClick="getAdjs"
+                style="@style/redButtonStyle"
+                android:layout_gravity="left"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="@string/adj8"
+                android:id="@+id/adj8Button"
+                android:textSize="36sp"
+                android:onClick="getAdjs"
+                style="@style/blueButtonStyle"
+                android:layout_gravity="left"
+                android:layout_margin="10dp" />
+
+        </GridLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="288dp">
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal">
 
             <Button
                 android:layout_width="wrap_content"
@@ -55,8 +140,10 @@
                 android:text="Done"
                 android:id="@+id/doneAdjsButton"
                 android:layout_gravity="center_vertical"
-                android:onClick="getAdjs" />
+                android:onClick="getAdjs"
+                android:layout_weight="0.5" />
         </LinearLayout>
     </LinearLayout>
+
 
 </RelativeLayout>

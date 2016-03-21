@@ -20,18 +20,11 @@ public class NounSelectionActivity extends AppCompatActivity {
     private boolean noun7Selected = false;
     private boolean noun8Selected = false;
 
-    /*private String noun2 = getString(R.string.noun2);
-    private String noun3 = getString(R.string.noun3);
-    private String noun4 = getString(R.string.noun4);
-    private String noun5 = getString(R.string.noun5);
-    private String noun6 = getString(R.string.noun6);
-    private String noun7 = getString(R.string.noun7);
-    private String noun8 = getString(R.string.noun8);
-*/
+
     private TextView nounNum;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        System.out.println("STARTING NOUNS");
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_noun_selection);
         nounNum = (TextView) findViewById(R.id.nounNumTextView);
