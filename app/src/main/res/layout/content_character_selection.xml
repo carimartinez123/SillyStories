@@ -41,7 +41,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:scaleType="fitXY"
-                android:id="@+id/starfireButton"
+                android:id="@+id/charButton0"
                 android:layout_below="@+id/charNumTextView"
                 android:layout_centerHorizontal="true"
                 android:onClick="getCharacters"
@@ -52,22 +52,23 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:scaleType="fitXY"
-                android:id="@+id/beastboyButton"
+                android:id="@+id/charButton1"
                 android:layout_below="@+id/charNumTextView"
                 android:layout_centerHorizontal="true"
                 android:onClick="getCharacters"
-                android:src="@drawable/beastboy" />
+                android:src="@drawable/beastboy"
+                android:layout_weight="1" />
 
             <ImageButton
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:scaleType="fitXY"
-                android:id="@+id/ravenButton"
+                android:id="@+id/charButton2"
                 android:layout_below="@+id/charNumTextView"
                 android:layout_centerHorizontal="true"
                 android:onClick="getCharacters"
                 android:src="@drawable/raven"
-                android:layout_weight="0.25" />
+                android:layout_weight="1" />
         </LinearLayout>
 
         <LinearLayout
@@ -75,31 +76,85 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:weightSum="1">
+            android:weightSum="5">
 
             <ImageButton
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:id="@+id/cyborgButton"
+                android:id="@+id/charButton3"
                 android:onClick="getCharacters"
                 android:scaleType="fitXY"
-                android:src="@drawable/cyborg" />
+                android:src="@drawable/cyborg"
+                android:layout_weight="1" />
 
             <ImageButton
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:id="@+id/robinButton"
+                android:id="@+id/charButton4"
                 android:src="@drawable/robin"
                 android:scaleType="fitXY"
-                android:onClick="getCharacters" />
+                android:onClick="getCharacters"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/charButton5"
+                android:src="@drawable/splatoon_boy"
+                android:scaleType="fitXY"
+                android:onClick="getCharacters"
+                android:layout_weight="1" />
 
         </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:weightSum="5" >
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:id="@+id/charButton6"
+                android:layout_below="@+id/splatGirlButton"
+                android:layout_centerHorizontal="true"
+                android:onClick="getCharacters"
+                android:src="@drawable/splatoon_girl"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:id="@+id/charButton7"
+                android:layout_below="@+id/link"
+                android:layout_centerHorizontal="true"
+                android:onClick="getCharacters"
+                android:src="@drawable/link"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:id="@+id/charButton8"
+                android:layout_below="@+id/zelda"
+                android:layout_centerHorizontal="true"
+                android:onClick="getCharacters"
+                android:src="@drawable/zelda"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:weightSum="1">
+            android:weightSum="1"
+            android:gravity="center">
 
             <Button
                 android:layout_width="wrap_content"
