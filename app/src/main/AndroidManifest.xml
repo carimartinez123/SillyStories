@@ -64,15 +64,6 @@
                 android:value="carimartinez123.sillystories.NewStoryActivity" />
         </activity>
         <activity
-            android:name=".EndMenuActivity"
-            android:label="@string/title_activity_end_menu"
-            android:parentActivityName=".BookActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="carimartinez123.sillystories.BookActivity" />
-        </activity>
-        <activity
             android:name=".BookActivity"
             android:label="@string/title_activity_book"
             android:parentActivityName=".NewStoryActivity"
