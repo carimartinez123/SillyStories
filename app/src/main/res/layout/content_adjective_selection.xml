@@ -42,27 +42,30 @@
             android:layout_marginTop="50dp">
 
             <Button
+                android:layout_width="165dp"
                 android:text="@string/adj0"
                 android:id="@+id/adj0Button"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:onClick="getAdjs"
                 style="@style/greenButtonStyle"
                 android:layout_gravity="fill_horizontal"
                 android:layout_margin="10dp" />
 
             <Button
+                android:layout_width="165dp"
                 android:text="@string/adj1"
                 android:id="@+id/adj1Button"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:onClick="getAdjs"
                 style="@style/redButtonStyle"
                 android:layout_gravity="left"
                 android:layout_margin="10dp" />
 
             <Button
+                android:layout_width="165dp"
                 android:text="@string/adj2"
                 android:id="@+id/adj2Button"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:onClick="getAdjs"
                 style="@style/blueButtonStyle"
                 android:layout_gravity="left"
@@ -70,55 +73,60 @@
 
 
             <Button
+                android:layout_width="165dp"
                 android:text="@string/adj3"
                 android:id="@+id/adj3Button"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:onClick="getAdjs"
                 style="@style/redButtonStyle"
                 android:layout_gravity="left"
                 android:layout_margin="10dp" />
 
             <Button
+                android:layout_width="165dp"
                 android:text="@string/adj4"
                 android:id="@+id/adj4Button"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:onClick="getAdjs"
                 style="@style/blueButtonStyle"
                 android:layout_gravity="left"
                 android:layout_margin="10dp" />
 
             <Button
+                android:layout_width="165dp"
                 android:text="@string/adj5"
                 android:id="@+id/adj5Button"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:onClick="getAdjs"
                 style="@style/greenButtonStyle"
                 android:layout_gravity="left"
-                android:layout_width="wrap_content"
                 android:layout_margin="10dp" />
 
             <Button
+                android:layout_width="165dp"
                 android:text="@string/adj6"
                 android:id="@+id/adj6Button"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:onClick="getAdjs"
                 style="@style/greenButtonStyle"
                 android:layout_gravity="left"
                 android:layout_margin="10dp" />
 
             <Button
+                android:layout_width="165dp"
                 android:text="@string/adj7"
                 android:id="@+id/adj7Button"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:onClick="getAdjs"
                 style="@style/redButtonStyle"
                 android:layout_gravity="left"
                 android:layout_margin="10dp" />
 
             <Button
+                android:layout_width="165dp"
                 android:text="@string/adj8"
                 android:id="@+id/adj8Button"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:onClick="getAdjs"
                 style="@style/blueButtonStyle"
                 android:layout_gravity="left"

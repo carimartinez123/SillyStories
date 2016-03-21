@@ -48,16 +48,21 @@
         <activity
             android:name=".NounSelectionActivity"
             android:label="@string/title_activity_noun_selection"
-            android:parentActivityName=".CharacterSelectionActivity"
+            android:parentActivityName=".NewStoryActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="carimartinez123.sillystories.CharacterSelectionActivity" />
+                android:value="carimartinez123.sillystories.NewStoryActivity" />
         </activity>
         <activity
             android:name=".AdjectiveSelectionActivity"
             android:label="@string/title_activity_adjective_selection"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:parentActivityName=".NewStoryActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="carimartinez123.sillystories.NewStoryActivity" />
+        </activity>
         <activity
             android:name=".EndMenuActivity"
             android:label="@string/title_activity_end_menu"
@@ -70,7 +75,12 @@
         <activity
             android:name=".BookActivity"
             android:label="@string/title_activity_book"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:parentActivityName=".NewStoryActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="carimartinez123.sillystories.NewStoryActivity" />
+        </activity>
     </application>
 
 </manifest>

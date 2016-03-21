@@ -42,27 +42,30 @@
             android:layout_marginTop="50dp">
 
             <Button
+                android:layout_width="165dp"
                 android:text="@string/noun0"
                 android:id="@+id/noun0Button"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:onClick="getNouns"
                 style="@style/greenButtonStyle"
                 android:layout_gravity="fill_horizontal"
                 android:layout_margin="10dp" />
 
             <Button
+                android:layout_width="165dp"
                 android:text="@string/noun1"
                 android:id="@+id/noun1Button"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:onClick="getNouns"
                 style="@style/redButtonStyle"
                 android:layout_gravity="left"
                 android:layout_margin="10dp" />
 
             <Button
+                android:layout_width="165dp"
                 android:text="@string/noun2"
                 android:id="@+id/noun2Button"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:onClick="getNouns"
                 style="@style/blueButtonStyle"
                 android:layout_gravity="left"
@@ -70,55 +73,60 @@
 
 
             <Button
+                android:layout_width="165dp"
                 android:text="@string/noun3"
                 android:id="@+id/noun3Button"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:onClick="getNouns"
                 style="@style/redButtonStyle"
                 android:layout_gravity="left"
                 android:layout_margin="10dp" />
 
             <Button
+                android:layout_width="165dp"
                 android:text="@string/noun4"
                 android:id="@+id/noun4Button"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:onClick="getNouns"
                 style="@style/blueButtonStyle"
                 android:layout_gravity="left"
                 android:layout_margin="10dp" />
 
             <Button
+                android:layout_width="165dp"
                 android:text="@string/noun5"
                 android:id="@+id/noun5Button"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:onClick="getNouns"
                 style="@style/greenButtonStyle"
                 android:layout_gravity="left"
-                android:layout_width="wrap_content"
                 android:layout_margin="10dp" />
 
             <Button
+                android:layout_width="165dp"
                 android:text="@string/noun6"
                 android:id="@+id/noun6Button"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:onClick="getNouns"
                 style="@style/greenButtonStyle"
                 android:layout_gravity="left"
                 android:layout_margin="10dp" />
 
             <Button
+                android:layout_width="165dp"
                 android:text="@string/noun7"
                 android:id="@+id/noun7Button"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:onClick="getNouns"
                 style="@style/redButtonStyle"
                 android:layout_gravity="left"
                 android:layout_margin="10dp" />
 
             <Button
+                android:layout_width="165dp"
                 android:text="@string/noun8"
                 android:id="@+id/noun8Button"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:onClick="getNouns"
                 style="@style/blueButtonStyle"
                 android:layout_gravity="left"
