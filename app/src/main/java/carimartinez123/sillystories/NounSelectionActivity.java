@@ -103,7 +103,7 @@ public class NounSelectionActivity extends AppCompatActivity {
 
         }
         else if(view.getId() == R.id.noun4Button && !noun4Selected) {
-            noun6Selected = true;
+            noun4Selected = true;
             BookContent.getNouns().add(getString(R.string.noun4));
             updateNounNum();
 

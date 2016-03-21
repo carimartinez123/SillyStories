@@ -19,15 +19,15 @@ public class CharacterSelectionActivity extends AppCompatActivity {
     private boolean char7Selected = false;
     private boolean char8Selected = false;
     
-    private String char0 = "Starfire";
-    private String char1 = "Beast Boy";
-    private String char2 = "Raven";
-    private String char3 = "Cyborg";
-    private String char4 = "Robin";
-    private String char5 = "Squid Boy";
-    private String char6 = "Splat Girl";
-    private String char7 = "Link";
-    private String char8 = "Zelda";
+    private String char0;
+    private String char1;
+    private String char2;
+    private String char3;
+    private String char4;
+    private String char5;
+    private String char6;
+    private String char7;
+    private String char8;
     
     private TextView charNum;
     @Override
@@ -38,8 +38,15 @@ public class CharacterSelectionActivity extends AppCompatActivity {
         charNum.setText("Pick " + (BookContent.getNumChars() - BookContent.getChars().size()) + " characters:");
         Button doneButton = (Button) findViewById(R.id.doneCharsButton);
         doneButton.setEnabled(false);
-
-
+        char0 = getString(R.string.char0);
+        char1 = getString(R.string.char1);
+        char2 = getString(R.string.char2);
+        char3 = getString(R.string.char3);
+        char4 = getString(R.string.char4);
+        char5 = getString(R.string.char5);
+        char6 = getString(R.string.char6);
+        char7 = getString(R.string.char7);
+        char8 = getString(R.string.char8);
     }
     @Override
     public void onResume()
@@ -103,7 +110,7 @@ public class CharacterSelectionActivity extends AppCompatActivity {
 
         }
         else if(view.getId() == R.id.charButton4 && !char4Selected) {
-            char6Selected = true;
+            char4Selected = true;
             BookContent.getChars().add(char4);
             updateCharNum();
 
