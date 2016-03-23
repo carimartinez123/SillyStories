@@ -3,6 +3,7 @@ package carimartinez123.sillystories;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,7 +23,8 @@ public class BookActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         TextView storyTextView = (TextView)findViewById(R.id.storyText);
         BookContent.generateText(BookContent.getTitle());
-        storyTextView.setText(BookContent.getText());
+
+        storyTextView.setText(Html.fromHtml(BookContent.getText()));
 
     }
 

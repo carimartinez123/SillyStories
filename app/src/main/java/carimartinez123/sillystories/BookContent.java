@@ -1,5 +1,7 @@
 package carimartinez123.sillystories;
 
+import android.text.Html;
+
 import java.util.ArrayList;
 
 /**
@@ -71,8 +73,47 @@ public class BookContent {
                 
                 String WEATHER1 = "tornado";
 
+                String next = "<font color='#EE0000'>red</font>";
 
-                text = "One day, " + CH1 + " and " + CH2 + " got in their " + N0 + " to get to the airport. They were going on a trip to " + PL + ", and they were very " + ADJ1 + ".  They were riding along " + ADV1 + " when all of a sudden " + CH1 + " said, \"Oh no I forgot my " + ADJ2 + " " + N1 + "!\" So, they turned their " + N0 + " around and started back to the house. " + CH2 + " said \"Uh-oh. We seem to be slowing down.\" \"Oh no!\" said " + CH1 + ". \" I forgot to put gas in the " + N0 + "!\" So, they stopped at the " + ADJ3 +  " gas station, " + CH2 + " said, \"Wow! This " + ADJ3 + " gas sure costs a lot of " +  N2 + "!\" " + CH1 +  " yelled, \"Oh no! I forgot my " + N2 + "!\" Now, they were really " + ADJ4 + ". Just then, it started to rain. " + CH2 + " cried, \"Look out! A " + WEATHER1 + "!\"  " + CH2 + " said, \" Ugh! I hate " + WEATHER1 + "s!\" " + CH1 +   " said, \"Don't worry. We'll get out of here. I found my lucky " + N3 + ". We can pay with that.\" "+ CH1 + " took the lucky " + N3 + " to " + CH3 + ", the cashier, who looked at it " + ADV2 + ". \"What exactly is this?\", said " + CH3 + ". \" This is my lucky " +  N3 + ",\" said " + CH1 + ", and it's worth " + NUM1 + " dollars, so I'm sure it will pay for the gas we need for our " + N0 + ".\" \"Okie dokie\", said " + CH3 + ". \"Here is your change.\" " +  CH3 + " gave " + CH1 + " one " + N4 + ", and " + CH1 + " and " + CH2 + " were off. \"Oh no!\" said " + CH1 + ". \"Look at the time! We're going to be late for our airplane if we don't go get my " + N1 + " right now!\" So they got in their " + N0 + " and went as fast as they could. All of a sudden, " + CH2 + " saw some flashing lights. \"Uh-oh!\" said " + CH2 + ". \"I think we were going too fast! The police officer is going to give us a " + N4 + "!\" " +  CH4 + ", the police officer, said \"Do you know how fast you were going? " + NUM2 + " miles per hour! I am going to have to give you a " + ADJ5 + " " +  N4 + ".\" " +  CH1 + " said, \"I'm sorry. We are in a hurry because I forgot my " + N1 + ", and we have to get to the airport fast. We're late! We're going to " + PL + " and we don't want to miss our flight. \" Well\", said " + CH4 + ", I happen to have an extra " + ADJ6 + " " +  N1 + " right here. I guess you could borrow it for a while if you promise to take good care of it.\" \"WE PROMISE!\" said " + CH1 + " and " + CH2+ ". Then, " + CH4 + " said \"You know, I know a " + ADJ7 + " shortcut to the airport from here. Follow me!\" So, " + CH1 + " and " + CH2 + " followed " + CH4 + " over the " + N5 + ", under the " + N6 + ", across the " + N7 + " and through the " + ADJ8 + " " + N8 + ". Finally, they made it to the airport. Time to fly!";
+                text = "One day, <font color='#0000EE'>" + CH1 + "</font> and <font color='#0000EE'>"
+                        + CH2 + "</font> got in their <font color='#0000EE'>" + N0 + "</font> to get to the airport. They were going on a trip to <font color='#0000EE'>"
+                        + PL + "</font>, and they were very <font color='#0000EE'>" + ADJ1 + "</font>.  They were riding along <font color='#0000EE'>" + ADV1 + "</font> " +
+                        "when all of a sudden <font color='#0000EE'>" + CH1 + "</font> said, \"Oh no I forgot my <font color='#0000EE'>" + ADJ2 +
+                        "</font> <font color='#0000EE'>" + N1 + "</font>!\" So, they turned their <font color='#0000EE'>" + N0 + "</font> around " +
+                        "and started back to the house. <font color='#0000EE'>" + CH2 + "</font> said \"Uh-oh. We seem to be slowing down.\" \"Oh no!\" said" +
+                        " <font color='#0000EE'>" + CH1 + "</font>. \" I forgot to put gas in the <font color='#0000EE'>" + N0 + "</font>!\" So, they stopped" +
+                        " at the <font color='#0000EE'>" + ADJ3 + "</font> gas station, <font color='#0000EE'>" + CH2 + "</font> said, \"Wow! " +
+                        "This <font color='#0000EE'>" + ADJ3 + "</font> gas sure costs a lot of <font color='#0000EE'>" +  N2 +
+                        "</font>!\" <font color='#0000EE'>" + CH1 + "</font> yelled, \"Oh no! I forgot my <font color='#0000EE'>" + N2 +
+                        "</font>!\" Now, they were really <font color='#0000EE'>" + ADJ4 + "</font>. Just then, it started to rain." +
+                        " <font color='#0000EE'>" + CH2 + "</font> cried, \"Look out! A <font color='#0000EE'>" + WEATHER1 + "</font>!\" " +
+                        " <font color='#0000EE'>" + CH2 + "</font> said, \" Ugh! I hate <font color='#0000EE'>" + WEATHER1 + "</font>s!\"" +
+                        " <font color='#0000EE'>" + CH1 + "</font> said, \"Don't worry. We'll get out of here. I found my lucky <font color='#0000EE'>"
+                        + N3 + "</font>. We can pay with that.\" <font color='#0000EE'>"+ CH1 + "</font> took the lucky <font color='#0000EE'>" + N3 + "</font> to " +
+                        "<font color='#0000EE'>" + CH3 + "</font>, the cashier, who looked at it <font color='#0000EE'>" + ADV2 + "</font>. " +
+                        "\"What exactly is this?\", said <font color='#0000EE'>" + CH3 + "</font>. \" This is my lucky <font color='#0000EE'>" +
+                        N3 + "</font>,\" said <font color='#0000EE'>" + CH1 + "</font>, and it's worth <font color='#0000EE'>" + NUM1 + "</font>" +
+                        " dollars, so I'm sure it will pay for the gas we need for our <font color='#0000EE'>" + N0 + "</font>.\" \"Okie dokie\"," +
+                        " said <font color='#0000EE'>" + CH3 + "</font>. \"Here is your change.\" <font color='#0000EE'>" +  CH3 + "</font> gave " +
+                        "<font color='#0000EE'>" + CH1 + "</font> one <font color='#0000EE'>" + N4 + "</font>, and <font color='#0000EE'>" + CH1 +
+                        "</font> and <font color='#0000EE'>" + CH2 + "</font> were off. \"Oh no!\" said <font color='#0000EE'>" + CH1 +
+                        "</font>. \"Look at the time! We're going to be late for our airplane if we don't go get my <font color='#0000EE'>" + N1 +
+                        "</font> right now!\" So they got in their <font color='#0000EE'>" + N0 + "</font> and went as fast as they could." +
+                        " All of a sudden, <font color='#0000EE'>" + CH2 + "</font> saw some flashing lights. \"Uh-oh!\" said <font color='#0000EE'>" +
+                        CH2 + "</font>. \"I think we were going too fast! The police officer is going to give us a <font color='#0000EE'>" +
+                        N4 + "</font>!\" <font color='#0000EE'>" +  CH4 + "</font>, the police officer, said \"Do you know how fast you were going? " +
+                        "<font color='#0000EE'>" + NUM2 + "</font> miles per hour! I am going to have to give you a <font color='#0000EE'>" +
+                        ADJ5 + "</font> <font color='#0000EE'>" +  N4 + "</font>.\" <font color='#0000EE'>" +  CH1 + "</font> said, \"I'm sorry. " +
+                        "We are in a hurry because I forgot my <font color='#0000EE'>" + N1 + "</font>, and we have to get to the airport fast. " +
+                        "We're late! We're going to <font color='#0000EE'>" + PL + "</font> and we don't want to miss our flight. \" Well\", " +
+                        "said <font color='#0000EE'>" + CH4 + "</font>, I happen to have an extra <font color='#0000EE'>" + ADJ6 + "</font> " +
+                        "<font color='#0000EE'>" + N1 + "</font> right here. I guess you could borrow it for a while if you promise to take good care" +
+                        " of it.\" \"WE PROMISE!\" said <font color='#0000EE'>" + CH1 + "</font> and <font color='#0000EE'>" + CH2+ "</font>. Then," +
+                        " <font color='#0000EE'>" + CH4 + "</font> said \"You know, I know a <font color='#0000EE'>" + ADJ7 + "</font> shortcut to " +
+                        "the airport from here. Follow me!\" So, <font color='#0000EE'>" + CH1 + "</font> and <font color='#0000EE'>" + CH2 +
+                        "</font> followed <font color='#0000EE'>" + CH4 + "</font> over the <font color='#0000EE'>" + N5 + "</font>, under the" +
+                        " <font color='#0000EE'>" + N6 + "</font>, across the <font color='#0000EE'>" + N7 + "</font> and through the" +
+                        " <font color='#0000EE'>" + ADJ8 + "</font> <font color='#0000EE'>" + N8 + "</font>. Finally, they made it to the airport. Time to fly!";
 
                 System.out.println(text);
                 break;
