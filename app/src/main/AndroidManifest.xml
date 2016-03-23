@@ -67,11 +67,12 @@
             android:name=".BookActivity"
             android:label="@string/title_activity_book"
             android:parentActivityName=".NewStoryActivity"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="carimartinez123.sillystories.NewStoryActivity" />
         </activity>
+        <activity android:name=".AdverbSelectionActivity"></activity>
     </application>
 
 </manifest>

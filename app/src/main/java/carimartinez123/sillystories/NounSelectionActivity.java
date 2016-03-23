@@ -138,7 +138,7 @@ public class NounSelectionActivity extends AppCompatActivity {
 
             }
             else {
-                Intent intent = new Intent(this, AdjectiveSelectionActivity.class);
+                Intent intent = new Intent(this, AdverbSelectionActivity.class);
                 startActivity(intent);
             }
         }
@@ -146,46 +146,3 @@ public class NounSelectionActivity extends AppCompatActivity {
     }
 
 }
-/*
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_noun_selection);
-
-
-    }
-
-    public void getNouns(View view)
-    {
-        System.out.println(getString(R.string.noun0));
-        if(view.getId() == R.id.noun0Button) {
-
-            BookContent.getNouns().add("umbrella");
-
-        }
-        else if(view.getId() == R.id.noun1Button) {
-
-            BookContent.getNouns().add("wig");
-
-        }
-        else if(view.getId() == R.id.noun2Button) {
-
-            BookContent.getNouns().add("shirt");
-
-        }
-        else if(view.getId() == R.id.doneNounsButton)
-        {
-            int i = 0;
-            while(i < BookContent.getNouns().size()) {
-                System.out.println(BookContent.getNouns().get(i));
-                i++;
-            }
-            Intent intent = new Intent(this, AdjectiveSelectionActivity.class);
-            startActivity(intent);
-        }
-
-    }
-
-}
-
-*/
