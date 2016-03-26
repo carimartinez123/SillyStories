@@ -3,6 +3,7 @@ package carimartinez123.sillystories;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -84,6 +85,7 @@ public class CharacterSelectionActivity extends AppCompatActivity {
     public void getCharacters(View view)
     {
 
+        Log.d("TEST", "numChars = " + BookContent.getNumChars());
         if(view.getId() == R.id.charButton0 && !char0Selected) {
             char0Selected = true;
             BookContent.getChars().add(char0);
@@ -148,8 +150,8 @@ public class CharacterSelectionActivity extends AppCompatActivity {
         else if(view.getId() == R.id.doneCharsButton)
         {
 
-            if(BookContent.getChars().size() != BookContent.getNumChars()) {
-
+            if(BookContent.getChars().size() < BookContent.getNumChars()) {
+                Log.d("TEST","Size of BookContent.char less than required number of chars for this story!");
             }
             else {
                 Intent intent = new Intent(this, NounSelectionActivity.class);

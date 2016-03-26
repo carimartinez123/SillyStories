@@ -3,6 +3,7 @@ package carimartinez123.sillystories;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -133,7 +134,8 @@ public class AdverbSelectionActivity extends AppCompatActivity {
         else if(view.getId() == R.id.doneAdverbsButton)
         {
 
-            if(BookContent.getAdvs().size() != BookContent.getNumAdvs()) {
+            if(BookContent.getAdvs().size() < BookContent.getNumAdvs()) {
+                Log.d("TEST", "Size of BookContent.adv less than required number of advs for this story!");
 
             }
             else {

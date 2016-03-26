@@ -3,6 +3,7 @@ package carimartinez123.sillystories;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -134,7 +135,8 @@ public class NounSelectionActivity extends AppCompatActivity {
         else if(view.getId() == R.id.doneNounsButton)
         {
 
-            if(BookContent.getNouns().size() != BookContent.getNumNouns()) {
+            if(BookContent.getNouns().size() < BookContent.getNumNouns()) {
+                Log.d("TEST", "Size of BookContent.nouns less than required number of nouns for this story!");
 
             }
             else {
