@@ -11,8 +11,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 public class NounSelectionActivity extends AppCompatActivity {
-
-
+    
     private boolean noun0Selected = false;
     private boolean noun1Selected = false;
     private boolean noun2Selected = false;
@@ -22,15 +21,6 @@ public class NounSelectionActivity extends AppCompatActivity {
     private boolean noun6Selected = false;
     private boolean noun7Selected = false;
     private boolean noun8Selected = false;
-    private FrameLayout buttonFrame0;
-    private FrameLayout buttonFrame1;
-    private FrameLayout buttonFrame2;
-    private FrameLayout buttonFrame3;
-    private FrameLayout buttonFrame4;
-    private FrameLayout buttonFrame5;
-    private FrameLayout buttonFrame6;
-    private FrameLayout buttonFrame7;
-    private FrameLayout buttonFrame8;
     private Button button0;
     private Button button1;
     private Button button2;
@@ -56,15 +46,6 @@ public class NounSelectionActivity extends AppCompatActivity {
         button7 = (Button)findViewById(R.id.noun7Button);
         button8 = (Button)findViewById(R.id.noun8Button);
 
-        buttonFrame0 = (FrameLayout)findViewById(R.id.nounFrame0);
-        buttonFrame1 = (FrameLayout)findViewById(R.id.nounFrame1);
-        buttonFrame2 = (FrameLayout)findViewById(R.id.nounFrame2);
-        buttonFrame3 = (FrameLayout)findViewById(R.id.nounFrame3);
-        buttonFrame4 = (FrameLayout)findViewById(R.id.nounFrame4);
-        buttonFrame5 = (FrameLayout)findViewById(R.id.nounFrame5);
-        buttonFrame6 = (FrameLayout)findViewById(R.id.nounFrame6);
-        buttonFrame7 = (FrameLayout)findViewById(R.id.nounFrame7);
-        buttonFrame8 = (FrameLayout)findViewById(R.id.nounFrame8);
         nounNum = (TextView) findViewById(R.id.nounNumTextView);
         nounNum.setText("Pick " + (BookContent.getNumNouns() - BookContent.getNouns().size()) + " nouns:");
         Button doneButton = (Button) findViewById(R.id.doneNounsButton);
@@ -110,46 +91,52 @@ public class NounSelectionActivity extends AppCompatActivity {
     {
         Log.d("TEST",BookContent.getNouns().toString());
         if(view.getId() == R.id.noun0Button) {
-            if(!noun0Selected) {
+            if(!noun0Selected && (BookContent.getNouns().size() < BookContent.getNumNouns())) {
                 noun0Selected = true;
                 button0.setTextColor(Color.BLACK);
                 BookContent.getNouns().add(getString(R.string.noun0));
             }
             else
             {
-                noun0Selected = false;
-                button0.setTextColor(Color.WHITE);
-                BookContent.getNouns().remove(getString(R.string.noun0));
+                if(noun0Selected) {
+                    noun0Selected = false;
+                    button0.setTextColor(Color.WHITE);
+                    BookContent.getNouns().remove(getString(R.string.noun0));
+                }
             }
             updateNounNum();
 
         }
         else if(view.getId() == R.id.noun1Button) {
-            if(!noun1Selected) {
+            if(!noun1Selected && (BookContent.getNouns().size() < BookContent.getNumNouns())) {
                 noun1Selected = true;
                 button1.setTextColor(Color.BLACK);
                 BookContent.getNouns().add(getString(R.string.noun1));
             }
             else
             {
-                noun1Selected = false;
-                button1.setTextColor(Color.WHITE);
-                BookContent.getNouns().remove(getString(R.string.noun1));
+                if(noun1Selected) {
+                    noun1Selected = false;
+                    button1.setTextColor(Color.WHITE);
+                    BookContent.getNouns().remove(getString(R.string.noun1));
+                }
             }
             updateNounNum();
 
         }
         else if(view.getId() == R.id.noun2Button) {
-            if(!noun2Selected) {
+            if(!noun2Selected && (BookContent.getNouns().size() < BookContent.getNumNouns())) {
                 noun2Selected = true;
                 button2.setTextColor(Color.BLACK);
                 BookContent.getNouns().add(getString(R.string.noun2));
             }
             else
             {
-                noun2Selected = false;
-                button2.setTextColor(Color.WHITE);
-                BookContent.getNouns().remove(getString(R.string.noun2));
+                if(noun2Selected) {
+                    noun2Selected = false;
+                    button2.setTextColor(Color.WHITE);
+                    BookContent.getNouns().remove(getString(R.string.noun2));
+                }
             }
             updateNounNum();
 
@@ -162,84 +149,95 @@ public class NounSelectionActivity extends AppCompatActivity {
             }
             else
             {
-                noun3Selected = false;
-                button3.setTextColor(Color.WHITE);
-                BookContent.getNouns().remove(getString(R.string.noun3));
+                if(noun3Selected) {
+                    noun3Selected = false;
+                    button3.setTextColor(Color.WHITE);
+                    BookContent.getNouns().remove(getString(R.string.noun3));
+                }
             }
             updateNounNum();
 
         }
         else if(view.getId() == R.id.noun4Button) {
-            if(!noun4Selected) {
+            if(!noun4Selected && (BookContent.getNouns().size() < BookContent.getNumNouns())) {
                 noun4Selected = true;
                 button4.setTextColor(Color.BLACK);
                 BookContent.getNouns().add(getString(R.string.noun4));
             }
             else
             {
-                noun4Selected = false;
-                button4.setTextColor(Color.WHITE);
-                BookContent.getNouns().remove(getString(R.string.noun4));
+                if(noun4Selected) {
+                    noun4Selected = false;
+                    button4.setTextColor(Color.WHITE);
+                    BookContent.getNouns().remove(getString(R.string.noun4));
+                }
             }
             updateNounNum();
 
         }
         else if(view.getId() == R.id.noun5Button) {
-            if(!noun5Selected) {
+            if(!noun5Selected && (BookContent.getNouns().size() < BookContent.getNumNouns())) {
                 button5.setTextColor(Color.BLACK);
                 noun5Selected = true;
                 BookContent.getNouns().add(getString(R.string.noun5));
             }
             else
             {
-                noun5Selected = false;
-                button5.setTextColor(Color.WHITE);
-                BookContent.getNouns().remove(getString(R.string.noun5));
+                if(noun5Selected) {
+                    noun5Selected = false;
+                    button5.setTextColor(Color.WHITE);
+                    BookContent.getNouns().remove(getString(R.string.noun5));
+                }
             }
             updateNounNum();
 
         }
         else if(view.getId() == R.id.noun6Button) {
-            if(!noun6Selected) {
+            if(!noun6Selected && (BookContent.getNouns().size() < BookContent.getNumNouns())) {
                 noun6Selected = true;
                 button6.setTextColor(Color.BLACK);
                 BookContent.getNouns().add(getString(R.string.noun6));
             }
             else
             {
-                noun6Selected = false;
-                button6.setTextColor(Color.WHITE);
-                BookContent.getNouns().remove(getString(R.string.noun6));
+                if(noun6Selected) {
+                    noun6Selected = false;
+                    button6.setTextColor(Color.WHITE);
+                    BookContent.getNouns().remove(getString(R.string.noun6));
+                }
             }
             updateNounNum();
 
         }
         else if(view.getId() == R.id.noun7Button) {
-            if(!noun7Selected) {
+            if(!noun7Selected && (BookContent.getNouns().size() < BookContent.getNumNouns())) {
                 noun7Selected = true;
                 button7.setTextColor(Color.BLACK);
                 BookContent.getNouns().add(getString(R.string.noun7));
             }
-            else
-            {
-                noun7Selected = false;
-                button7.setTextColor(Color.WHITE);
-                BookContent.getNouns().remove(getString(R.string.noun7));
+            else {
+                if (noun7Selected) {
+                    noun7Selected = false;
+                    button7.setTextColor(Color.WHITE);
+                    BookContent.getNouns().remove(getString(R.string.noun7));
+                }
             }
             updateNounNum();
 
         }
         else if(view.getId() == R.id.noun8Button) {
-            if(!noun8Selected) {
+            if(!noun8Selected && (BookContent.getNouns().size() < BookContent.getNumNouns())) {
                 noun8Selected = true;
                 button8.setTextColor(Color.BLACK);
                 BookContent.getNouns().add(getString(R.string.noun8));
             }
             else
             {
-                noun8Selected = false;
-                button8.setTextColor(Color.WHITE);
-                BookContent.getNouns().remove(getString(R.string.noun8));
+                if(noun8Selected) {
+                    noun8Selected = false;
+                    button8.setTextColor(Color.WHITE);
+                    BookContent.getNouns().remove(getString(R.string.noun8));
+                }
             }
             updateNounNum();
 
