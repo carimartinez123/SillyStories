@@ -24,16 +24,6 @@
 
 
 
-    <string name="adj0">"suspicious"</string>
-    <string name="adj1">"cozy"</string>
-    <string name="adj2">"stinky"</string>
-    <string name="adj3">"silly"</string>
-    <string name="adj4">"pesky"</string>
-    <string name="adj5">"squishy"</string>
-    <string name="adj6">"cuddly"</string>
-    <string name="adj7">"bubbly"</string>
-    <string name="adj8">"zesty"</string>
-
     <string name="title_activity_delete">DeleteActivity</string>
 
 

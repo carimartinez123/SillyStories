@@ -61,4 +61,20 @@
         <item>goofily</item>
     </string-array>
 
+    <string-array name="adj_array">
+        <item>suspicious</item>
+        <item>cozy</item>
+        <item>stinky</item>
+        <item>silly</item>
+        <item>pesky</item>
+        <item>squishy</item>
+        <item>cuddly</item>
+        <item>bubbly</item>
+        <item>zesty</item>
+        <item>pickled</item>
+        <item>grumpy</item>
+        <item>spiky</item>
+    </string-array>
+
+
 </resources>
