@@ -122,6 +122,7 @@ public class AdjectiveSelectionActivity extends AppCompatActivity {
         else {
             Intent intent = new Intent(this, BookActivity.class);
             startActivity(intent);
+            finish();
         }
     }
 

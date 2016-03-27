@@ -193,6 +193,7 @@ public class CharacterSelectionActivity extends AppCompatActivity {
             else {
                 Intent intent = new Intent(this, NounSelectionActivity.class);
                 startActivity(intent);
+                finish();
             }
         }
 

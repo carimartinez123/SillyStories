@@ -122,6 +122,7 @@ public class AdverbSelectionActivity extends AppCompatActivity {
             Log.d("TEST", "Advs list: " + BookContent.getAdvs().toString());
             Intent intent = new Intent(this, AdjectiveSelectionActivity.class);
             startActivity(intent);
+            finish();
         }
     }
 

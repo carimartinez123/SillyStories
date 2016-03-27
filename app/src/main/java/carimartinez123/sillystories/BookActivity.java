@@ -1,5 +1,12 @@
 package carimartinez123.sillystories;
 
+import android.app.Activity;
+import android.app.ActivityManager;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -11,6 +18,7 @@ import android.widget.Toast;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.util.List;
 
 public class BookActivity extends AppCompatActivity {
 
@@ -29,6 +37,17 @@ public class BookActivity extends AppCompatActivity {
     public void onBackPressed() {
 
         //disable back button
+    }
+
+    public void restart()
+    {
+
+
+        Intent restartIntent = new Intent(this, MainActivity.class);
+        restartIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //Set this flag
+        startActivity(restartIntent);
+        finish();
+
     }
 
     public void saveStory(View v){

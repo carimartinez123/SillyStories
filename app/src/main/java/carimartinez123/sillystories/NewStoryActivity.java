@@ -39,6 +39,7 @@ public class NewStoryActivity extends AppCompatActivity {
             BookContent.generateGrammarTypes("Ride to the Airport");
             intent = new Intent(this, CharacterSelectionActivity.class);
             startActivity(intent);
+            finish();
         }
 
 

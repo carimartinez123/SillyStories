@@ -121,6 +121,7 @@ public class NounSelectionActivity extends AppCompatActivity {
             Log.d("TEST", "Nouns list: " + BookContent.getNouns().toString());
             Intent intent = new Intent(this, AdverbSelectionActivity.class);
             startActivity(intent);
+            finish();
         }
     }
 

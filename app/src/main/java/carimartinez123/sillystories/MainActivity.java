@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private Button savedButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         newButton = (Button)findViewById(R.id.newStoryButton);
