@@ -17,11 +17,12 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:weightSum="1">
+        android:weightSum="8">
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"
             android:text="Pick a character:"
             android:id="@+id/charNumTextView"
             android:editable="false"
@@ -32,20 +33,22 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_height="0dip"
             android:padding="5dp"
-            android:weightSum="5">
+            android:weightSum="6">
             <FrameLayout
                 android:id="@+id/charFrame0"
-                android:layout_width="160dip"
-                android:layout_height="160dip"
+                android:layout_weight="2"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
                 android:background="#ffffff"
                 android:layout_margin="5dp"
                 android:padding="5dp">
 
                 <ImageButton
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:scaleType="fitXY"
                     android:id="@+id/charButton0"
                     android:layout_below="@+id/charNumTextView"
@@ -56,16 +59,17 @@
             </FrameLayout>
             <FrameLayout
                 android:id="@+id/charFrame1"
-                android:layout_width="160dip"
-                android:layout_height="160dip"
+                android:layout_weight="2"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
                 android:background="#ffffff"
                 android:layout_margin="5dp"
                 android:padding="5dp">
 
 
                 <ImageButton
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:scaleType="fitXY"
                     android:id="@+id/charButton1"
                     android:layout_below="@+id/charNumTextView"
@@ -76,17 +80,17 @@
             </FrameLayout>
             <FrameLayout
                 android:id="@+id/charFrame2"
-
-                android:layout_width="160dip"
-                android:layout_height="160dip"
+                android:layout_weight="2"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
                 android:background="#ffffff"
                 android:layout_margin="5dp"
                 android:padding="5dp">
 
 
                 <ImageButton
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:scaleType="fitXY"
                     android:id="@+id/charButton2"
                     android:layout_below="@+id/charNumTextView"
@@ -100,92 +104,92 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
+            android:layout_weight="2"
+            android:layout_height="0dip"
             android:padding="5dp"
-            android:weightSum="5">
+            android:weightSum="6">
             <FrameLayout
                 android:id="@+id/charFrame3"
-
-                android:layout_width="160dip"
-                android:layout_height="160dip"
+                android:layout_weight="2"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
                 android:background="#ffffff"
                 android:layout_margin="5dp"
                 android:padding="5dp">
 
-
                 <ImageButton
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:id="@+id/charButton3"
-                    android:onClick="getCharacters"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:scaleType="fitXY"
+                    android:id="@+id/charButton3"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="getCharacters"
                     android:src="@drawable/cyborg"
                     android:layout_weight="1" />
             </FrameLayout>
             <FrameLayout
                 android:id="@+id/charFrame4"
-
-                android:layout_width="160dip"
-                android:layout_height="160dip"
+                android:layout_weight="2"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
                 android:background="#ffffff"
                 android:layout_margin="5dp"
                 android:padding="5dp">
 
 
                 <ImageButton
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:id="@+id/charButton4"
-                    android:src="@drawable/robin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:scaleType="fitXY"
+                    android:id="@+id/charButton4"
+                    android:layout_centerHorizontal="true"
                     android:onClick="getCharacters"
+                    android:src="@drawable/robin"
                     android:layout_weight="1" />
-        </FrameLayout>
+            </FrameLayout>
             <FrameLayout
                 android:id="@+id/charFrame5"
-
-                android:layout_width="160dip"
-                android:layout_height="160dip"
+                android:layout_weight="2"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
                 android:background="#ffffff"
                 android:layout_margin="5dp"
                 android:padding="5dp">
 
 
                 <ImageButton
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:id="@+id/charButton5"
-                    android:src="@drawable/splatoon_boy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:scaleType="fitXY"
+                    android:id="@+id/charButton5"
+                    android:layout_centerHorizontal="true"
                     android:onClick="getCharacters"
+                    android:src="@drawable/splatoon_boy"
                     android:layout_weight="1" />
-        </FrameLayout>
+            </FrameLayout>
         </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_height="0dip"
             android:padding="5dp"
-            android:weightSum="5" >
-
+            android:weightSum="6">
             <FrameLayout
                 android:id="@+id/charFrame6"
-
-                android:layout_width="160dip"
-                android:layout_height="160dip"
+                android:layout_weight="2"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
                 android:background="#ffffff"
                 android:layout_margin="5dp"
                 android:padding="5dp">
 
-
                 <ImageButton
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:scaleType="fitXY"
                     android:id="@+id/charButton6"
-                    android:layout_below="@+id/splatGirlButton"
                     android:layout_centerHorizontal="true"
                     android:onClick="getCharacters"
                     android:src="@drawable/splatoon_girl"
@@ -193,20 +197,19 @@
             </FrameLayout>
             <FrameLayout
                 android:id="@+id/charFrame7"
-
-                android:layout_width="160dip"
-                android:layout_height="160dip"
+                android:layout_weight="2"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
                 android:background="#ffffff"
                 android:layout_margin="5dp"
                 android:padding="5dp">
 
 
                 <ImageButton
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:scaleType="fitXY"
                     android:id="@+id/charButton7"
-                    android:layout_below="@+id/link"
                     android:layout_centerHorizontal="true"
                     android:onClick="getCharacters"
                     android:src="@drawable/link"
@@ -214,34 +217,35 @@
             </FrameLayout>
             <FrameLayout
                 android:id="@+id/charFrame8"
-
-                android:layout_width="160dip"
-                android:layout_height="160dip"
+                android:layout_weight="2"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
                 android:background="#ffffff"
                 android:layout_margin="5dp"
                 android:padding="5dp">
 
 
                 <ImageButton
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:scaleType="fitXY"
                     android:id="@+id/charButton8"
-                    android:layout_below="@+id/zelda"
                     android:layout_centerHorizontal="true"
                     android:onClick="getCharacters"
                     android:src="@drawable/zelda"
                     android:layout_weight="1" />
-        </FrameLayout>
+            </FrameLayout>
         </LinearLayout>
+
 
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dip"
             android:weightSum="1"
-            android:gravity="center">
+            android:gravity="center_horizontal">
 
             <Button
                 android:layout_width="wrap_content"
@@ -249,8 +253,8 @@
                 android:text="Done"
                 android:id="@+id/doneCharsButton"
                 android:onClick="getCharacters"
-                android:layout_weight="0.12"
-                style="@style/greenButtonStyle" />
+                android:layout_margin="5dp"
+                android:layout_weight="0.12" />
         </LinearLayout>
 
 

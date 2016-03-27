@@ -62,6 +62,7 @@ public class CharacterSelectionActivity extends AppCompatActivity {
         charFrame7 = (FrameLayout)findViewById(R.id.charFrame7);
         charFrame8 = (FrameLayout)findViewById(R.id.charFrame8);
         doneButton = (Button) findViewById(R.id.doneCharsButton);
+        doneButton.setEnabled(false);
         char0 = getString(R.string.char0);
         char1 = getString(R.string.char1);
         char2 = getString(R.string.char2);
@@ -128,10 +129,12 @@ public class CharacterSelectionActivity extends AppCompatActivity {
         int charsLeft = BookContent.getNumChars() - BookContent.getChars().size();
         if(charsLeft > 1) {
             charNum.setText("Pick " + charsLeft + " characters:");
+            doneButton.setEnabled(false);
         }
         else if (charsLeft == 1)
         {
             charNum.setText("Pick " + charsLeft + " character:");
+            doneButton.setEnabled(false);
         }
         else
         {
