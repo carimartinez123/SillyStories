@@ -103,16 +103,8 @@ public class NounSelectionActivity extends AppCompatActivity {
 
     public void getNouns(View view)
     {
-        int index_pressed = -1;
-        for(int i = 0; i < buttons.length; i++)
-        {
-            if (view == buttons[i])
-            {
 
-                index_pressed = i;
-            }
-
-        }
+        int index_pressed = Utils.getIndex(buttons, view);
         boolean needWords = BookContent.getNouns().size() < BookContent.getNumNouns();
         Utils.selectWord(needWords, nounSelected, buttons, index_pressed, BookContent.getNouns(), nouns);
         Utils.updateWordTypeNum(nounNum, doneButton, BookContent.getNumNouns(), BookContent.getNouns().size());

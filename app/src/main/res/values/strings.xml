@@ -22,19 +22,7 @@
     <string name="story10">Chasing Cats</string>
 
 
-    <string name="char0">"Starfire"</string>
-    <string name="char1">"Beast Boy"</string>
-    <string name="char2">"Raven"</string>
-    <string name="char3">"Cyborg"</string>
-    <string name="char4">"Robin"</string>
-    <string name="char5">"Squid Boy"</string>
-    <string name="char6">"Splat Girl"</string>
-    <string name="char7">"Link"</string>
-    <string name="char8">"Zelda"</string>
-    <string name="char9">"Grandma"</string>
-    <string name="char10">"Skye"</string>
-    <string name="char11">"Rosie"</string>
-    <string name="char12">"Senji"</string>
+
     <string name="adj0">"suspicious"</string>
     <string name="adj1">"cozy"</string>
     <string name="adj2">"stinky"</string>

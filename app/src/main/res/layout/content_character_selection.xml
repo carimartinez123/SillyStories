@@ -252,7 +252,7 @@
                 android:layout_height="wrap_content"
                 android:text="Done"
                 android:id="@+id/doneCharsButton"
-                android:onClick="getCharacters"
+                android:onClick="charsDone"
                 android:layout_margin="5dp"
                 android:layout_weight="0.12" />
         </LinearLayout>

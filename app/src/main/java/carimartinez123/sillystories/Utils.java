@@ -23,11 +23,13 @@ public class Utils {
     {
         int wordsLeft = wordsNeeded - wordsSelected;
         if(wordsLeft > 1) {
-            wordNum.setText("Pick " + wordsLeft + " nouns:");
+            wordNum.setText("Pick " + wordsLeft + ":");
+            doneButton.setEnabled(false);
         }
         else if (wordsLeft == 1)
         {
-            wordNum.setText("Pick " + wordsLeft + " noun:");
+            wordNum.setText("Pick " + wordsLeft + ":");
+            doneButton.setEnabled(false);
         }
         else
         {
@@ -53,6 +55,21 @@ public class Utils {
                 }
             }
 
+    }
+
+    protected static int getIndex(Button[] buttons, View view)
+    {
+        int index_pressed = -1;
+        for(int i = 0; i < buttons.length; i++)
+        {
+            if (view == buttons[i])
+            {
+
+                index_pressed = i;
+            }
+
+        }
+        return index_pressed;
     }
 
 

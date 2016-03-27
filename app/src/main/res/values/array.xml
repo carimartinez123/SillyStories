@@ -15,4 +15,33 @@
         <item>gold</item>
         <item>flower</item>
     </string-array>
+
+    <string-array name="char_array">
+        <item>Starfire</item>
+        <item>Beast Boy</item>
+        <item>Raven</item>
+        <item>Cyborg</item>
+        <item>Robin</item>
+        <item>Squid Boy</item>
+        <item>Splat Girl</item>
+        <item>Link</item>
+        <item>Zelda</item>
+        <item>Grandma</item>
+        <item>Skye</item>
+        <item>Rosie</item>
+        <item>Senji</item>
+    </string-array>
+
+
+    <array name="char_imgs">
+        <item>@drawable/starfire</item>
+        <item>@drawable/beastboy</item>
+        <item>@drawable/raven</item>
+        <item>@drawable/cyborg</item>
+        <item>@drawable/robin</item>
+        <item>@drawable/splatoon_boy</item>
+        <item>@drawable/splatoon_girl</item>
+        <item>@drawable/link</item>
+        <item>@drawable/zelda</item>
+    </array>
 </resources>
