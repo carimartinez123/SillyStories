@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -83,8 +82,7 @@ public class CharacterSelectionActivity extends AppCompatActivity {
        // loadPrefs();
         updateSelectedChars();
         updateCharNum();
-        Log.d("TEST", "ONRESUME #chars selected : " + BookContent.getChars().size());
-        Log.d("TEST", "ONRESUME char0 selected = " + char0Selected);
+
     }
     @Override
     public void onBackPressed() {
@@ -111,7 +109,7 @@ public class CharacterSelectionActivity extends AppCompatActivity {
     }
 
     private void loadPrefs(){
-        Log.d("TEST", "onLoad: char0" + char0Selected);
+
         SharedPreferences sharedPreferences = getPreferences(MODE_PRIVATE);
         char0Selected = sharedPreferences.getBoolean("char0Selected", false);
         char1Selected = sharedPreferences.getBoolean("char1Selected", false);
@@ -392,7 +390,7 @@ public class CharacterSelectionActivity extends AppCompatActivity {
         {
 
             if(BookContent.getChars().size() < BookContent.getNumChars()) {
-                Log.d("TEST","Size of BookContent.char less than required number of chars for this story!");
+
             }
             else {
                 Intent intent = new Intent(this, NounSelectionActivity.class);

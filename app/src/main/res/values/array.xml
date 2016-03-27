@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="noun_array">
+        <item>wig</item>
+        <item>umbrella</item>
+        <item>leprechaun</item>
+        <item>rock</item>
+        <item>blanket</item>
+        <item>clam</item>
+        <item>sock</item>
+        <item>roly poly</item>
+        <item>trophy</item>
+        <item>rainbow</item>
+        <item>gold</item>
+        <item>flower</item>
+    </string-array>
+</resources>
