@@ -38,17 +38,14 @@ public class AdverbSelectionActivity extends AppCompatActivity {
     public void onResume()
     {
         super.onResume();
-        for(String str: BookContent.getAdvs())
-        {
-            Button doneButton = (Button) findViewById(R.id.doneAdverbsButton);
-            doneButton.setEnabled(false);
-            BookContent.getAdvs().remove(str);
-            updateAdverbNum();
-        }
 
     }
 
+    @Override
+    public void onBackPressed() {
 
+        //disable back button
+    }
     private void updateAdverbNum()
     {
         int advsLeft = BookContent.getNumAdvs() - BookContent.getAdvs().size();

@@ -21,6 +21,10 @@ public class NounSelectionActivity extends AppCompatActivity {
     private boolean noun6Selected = false;
     private boolean noun7Selected = false;
     private boolean noun8Selected = false;
+    private boolean noun9Selected = false;
+    private boolean noun10Selected = false;
+    private boolean noun11Selected = false;
+
     private Button button0;
     private Button button1;
     private Button button2;
@@ -30,6 +34,10 @@ public class NounSelectionActivity extends AppCompatActivity {
     private Button button6;
     private Button button7;
     private Button button8;
+    private Button button9;
+    private Button button10;
+    private Button button11;
+    private Button doneButton;
     private TextView nounNum;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,26 +53,27 @@ public class NounSelectionActivity extends AppCompatActivity {
         button6 = (Button)findViewById(R.id.noun6Button);
         button7 = (Button)findViewById(R.id.noun7Button);
         button8 = (Button)findViewById(R.id.noun8Button);
+        button9 = (Button)findViewById(R.id.noun9Button);
+        button10 = (Button)findViewById(R.id.noun10Button);
+        button11 = (Button)findViewById(R.id.noun11Button);
 
         nounNum = (TextView) findViewById(R.id.nounNumTextView);
-        nounNum.setText("Pick " + (BookContent.getNumNouns() - BookContent.getNouns().size()) + " nouns:");
-        Button doneButton = (Button) findViewById(R.id.doneNounsButton);
+        doneButton = (Button) findViewById(R.id.doneNounsButton);
         doneButton.setEnabled(false);
-
-
+        updateNounNum();
 
     }
+    @Override
+    public void onBackPressed() {
+
+        //disable back button
+    }
+
     @Override
     public void onResume()
     {
         super.onResume();
-        for(String str: BookContent.getNouns())
-        {
-            Button doneButton = (Button) findViewById(R.id.doneNounsButton);
-            doneButton.setEnabled(false);
-            BookContent.getNouns().remove(str);
-            updateNounNum();
-        }
+        
 
     }
 
@@ -89,7 +98,7 @@ public class NounSelectionActivity extends AppCompatActivity {
 
     public void getNouns(View view)
     {
-        Log.d("TEST",BookContent.getNouns().toString());
+        
         if(view.getId() == R.id.noun0Button) {
             if(!noun0Selected && (BookContent.getNouns().size() < BookContent.getNumNouns())) {
                 noun0Selected = true;
@@ -242,6 +251,58 @@ public class NounSelectionActivity extends AppCompatActivity {
             updateNounNum();
 
         }
+
+        else if(view.getId() == R.id.noun9Button) {
+            if(!noun9Selected && (BookContent.getNouns().size() < BookContent.getNumNouns())) {
+                noun9Selected = true;
+                button9.setTextColor(Color.BLACK);
+                BookContent.getNouns().add(getString(R.string.noun9));
+            }
+            else
+            {
+                if(noun9Selected) {
+                    noun9Selected = false;
+                    button9.setTextColor(Color.WHITE);
+                    BookContent.getNouns().remove(getString(R.string.noun9));
+                }
+            }
+            updateNounNum();
+
+        }
+        else if(view.getId() == R.id.noun10Button) {
+            if(!noun10Selected && (BookContent.getNouns().size() < BookContent.getNumNouns())) {
+                noun10Selected = true;
+                button10.setTextColor(Color.BLACK);
+                BookContent.getNouns().add(getString(R.string.noun10));
+            }
+            else
+            {
+                if(noun10Selected) {
+                    noun10Selected = false;
+                    button10.setTextColor(Color.WHITE);
+                    BookContent.getNouns().remove(getString(R.string.noun10));
+                }
+            }
+            updateNounNum();
+
+        }
+        else if(view.getId() == R.id.noun11Button) {
+            if(!noun11Selected && (BookContent.getNouns().size() < BookContent.getNumNouns())) {
+                noun11Selected = true;
+                button11.setTextColor(Color.BLACK);
+                BookContent.getNouns().add(getString(R.string.noun11));
+            }
+            else
+            {
+                if(noun11Selected) {
+                    noun11Selected = false;
+                    button11.setTextColor(Color.WHITE);
+                    BookContent.getNouns().remove(getString(R.string.noun11));
+                }
+            }
+            updateNounNum();
+
+        }
         else if(view.getId() == R.id.doneNounsButton)
         {
 
@@ -250,6 +311,7 @@ public class NounSelectionActivity extends AppCompatActivity {
 
             }
             else {
+                Log.d("TEST", "Nouns list: " + BookContent.getNouns().toString());
                 Intent intent = new Intent(this, AdverbSelectionActivity.class);
                 startActivity(intent);
             }

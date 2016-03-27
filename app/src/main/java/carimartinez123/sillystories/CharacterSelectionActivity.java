@@ -1,6 +1,7 @@
 package carimartinez123.sillystories;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -41,16 +42,16 @@ public class CharacterSelectionActivity extends AppCompatActivity {
     private FrameLayout charFrame6;
     private FrameLayout charFrame7;
     private FrameLayout charFrame8;
+
+    private Button doneButton;
     
     private TextView charNum;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_character_selection);
         charNum = (TextView) findViewById(R.id.charNumTextView);
-        charNum.setText("Pick " + (BookContent.getNumChars() - BookContent.getChars().size()) + " characters:");
-        Button doneButton = (Button) findViewById(R.id.doneCharsButton);
-        doneButton.setEnabled(false);
         charFrame0 = (FrameLayout)findViewById(R.id.charFrame0);
         charFrame1 = (FrameLayout)findViewById(R.id.charFrame1);
         charFrame2 = (FrameLayout)findViewById(R.id.charFrame2);
@@ -60,6 +61,7 @@ public class CharacterSelectionActivity extends AppCompatActivity {
         charFrame6 = (FrameLayout)findViewById(R.id.charFrame6);
         charFrame7 = (FrameLayout)findViewById(R.id.charFrame7);
         charFrame8 = (FrameLayout)findViewById(R.id.charFrame8);
+        doneButton = (Button) findViewById(R.id.doneCharsButton);
         char0 = getString(R.string.char0);
         char1 = getString(R.string.char1);
         char2 = getString(R.string.char2);
@@ -69,22 +71,58 @@ public class CharacterSelectionActivity extends AppCompatActivity {
         char6 = getString(R.string.char6);
         char7 = getString(R.string.char7);
         char8 = getString(R.string.char8);
+
+        updateSelectedChars();
+        updateCharNum();
     }
     @Override
     public void onResume()
     {
         super.onResume();
-        for(String str: BookContent.getChars())
-        {
-            Button doneButton = (Button) findViewById(R.id.doneCharsButton);
-            doneButton.setEnabled(false);
-            BookContent.getChars().remove(str);
-            updateCharNum();
-        }
+       // loadPrefs();
+        updateSelectedChars();
+        updateCharNum();
+        Log.d("TEST", "ONRESUME #chars selected : " + BookContent.getChars().size());
+        Log.d("TEST", "ONRESUME char0 selected = " + char0Selected);
+    }
+    @Override
+    public void onBackPressed() {
 
+        //disable back button
     }
 
 
+    private void savePrefs(){
+        SharedPreferences sharedPreferences = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        editor.putBoolean("char0Selected", char0Selected);
+        editor.putBoolean("char1Selected", char1Selected);
+        editor.putBoolean("char2Selected", char2Selected);
+        editor.putBoolean("char3Selected", char3Selected);
+        editor.putBoolean("char4Selected", char4Selected);
+        editor.putBoolean("char5Selected", char5Selected);
+        editor.putBoolean("char6Selected", char6Selected);
+        editor.putBoolean("char7Selected", char7Selected);
+        editor.putBoolean("char8Selected", char8Selected);
+        editor.putBoolean("doneEnabled", doneButton.isEnabled());
+        editor.commit();
+    }
+
+    private void loadPrefs(){
+        Log.d("TEST", "onLoad: char0" + char0Selected);
+        SharedPreferences sharedPreferences = getPreferences(MODE_PRIVATE);
+        char0Selected = sharedPreferences.getBoolean("char0Selected", false);
+        char1Selected = sharedPreferences.getBoolean("char1Selected", false);
+        char2Selected = sharedPreferences.getBoolean("char2Selected", false);
+        char3Selected = sharedPreferences.getBoolean("char3Selected", false);
+        char4Selected = sharedPreferences.getBoolean("char4Selected", false);
+        char5Selected = sharedPreferences.getBoolean("char5Selected", false);
+        char6Selected = sharedPreferences.getBoolean("char6Selected", false);
+        char7Selected = sharedPreferences.getBoolean("char7Selected", false);
+        char8Selected = sharedPreferences.getBoolean("char8Selected", false);
+        doneButton.setEnabled(sharedPreferences.getBoolean("doneEnabled",false));
+    }
     private void updateCharNum()
     {
         int charsLeft = BookContent.getNumChars() - BookContent.getChars().size();
@@ -98,15 +136,81 @@ public class CharacterSelectionActivity extends AppCompatActivity {
         else
         {
             charNum.setText("Click done!");
-            Button doneButton = (Button) findViewById(R.id.doneCharsButton);
+
             doneButton.setEnabled(true);
         }
     }
 
+    private void updateSelectedChars()
+    {
+        if(char0Selected) {
+            charFrame0.setBackgroundColor(Color.YELLOW);
+        }
+        else
+        {
+            charFrame0.setBackgroundColor(Color.WHITE);
+        }
+        if(char1Selected) {
+            charFrame1.setBackgroundColor(Color.YELLOW);
+        }
+        else
+        {
+            charFrame1.setBackgroundColor(Color.WHITE);
+        }
+        if(char2Selected) {
+            charFrame2.setBackgroundColor(Color.YELLOW);
+        }
+        else
+        {
+            charFrame2.setBackgroundColor(Color.WHITE);
+        }
+        if(char3Selected) {
+            charFrame3.setBackgroundColor(Color.YELLOW);
+        }
+        else
+        {
+            charFrame3.setBackgroundColor(Color.WHITE);
+        }
+        if(char4Selected) {
+            charFrame4.setBackgroundColor(Color.YELLOW);
+        }
+        else
+        {
+            charFrame4.setBackgroundColor(Color.WHITE);
+        }
+        if(char5Selected) {
+            charFrame5.setBackgroundColor(Color.YELLOW);
+        }
+        else
+        {
+            charFrame5.setBackgroundColor(Color.WHITE);
+        }
+        if(char6Selected) {
+            charFrame6.setBackgroundColor(Color.YELLOW);
+        }
+        else
+        {
+            charFrame6.setBackgroundColor(Color.WHITE);
+        }
+        if(char7Selected) {
+            charFrame7.setBackgroundColor(Color.YELLOW);
+        }
+        else
+        {
+            charFrame7.setBackgroundColor(Color.WHITE);
+        }
+        if(char8Selected) {
+            charFrame8.setBackgroundColor(Color.YELLOW);
+        }
+        else
+        {
+            charFrame8.setBackgroundColor(Color.WHITE);
+        }
+    }
     public void getCharacters(View view)
     {
 
-        Log.d("TEST", "numChars = " + BookContent.getNumChars());
+
         if(view.getId() == R.id.charButton0) {
             if(!char0Selected && (BookContent.getChars().size() < BookContent.getNumChars()))
             {

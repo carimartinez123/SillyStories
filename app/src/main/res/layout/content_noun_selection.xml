@@ -45,17 +45,12 @@
             android:weightSum="5"
             android:layout_margin="10dp">
 
-            <FrameLayout
-                android:id="@+id/nounFrame0"
-                android:layout_weight="1.5"
-                android:layout_width="0dip"
-                android:layout_height="match_parent"
-                android:background="#ffffff"
-                android:layout_margin="0dp"
-                android:padding="5dp">
+           
 
                 <Button
-                    android:layout_width="match_parent"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="10dp"
                     android:text="@string/noun0"
                     android:id="@+id/noun0Button"
                     android:textSize="24sp"
@@ -64,39 +59,24 @@
                     android:layout_gravity="center"
                     android:textColor="#ffffff" />
 
-            </FrameLayout>
-
-            <FrameLayout
-                android:id="@+id/nounFrame1"
-                android:layout_weight="1.5"
-                android:layout_width="0dip"
-                android:layout_height="match_parent"
-                android:background="#ffffff"
-                android:layout_margin="0dp"
-                android:padding="5dp">
+          
 
                 <Button
-                        android:layout_width="match_parent"
-                        android:text="@string/noun1"
-                        android:id="@+id/noun1Button"
-                        android:textSize="24sp"
-                        android:onClick="getNouns"
-                        style="@style/redButtonStyle"
-                        android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/noun1"
+                    android:id="@+id/noun1Button"
+                    android:textSize="24sp"
+                    android:onClick="getNouns"
+                    style="@style/redButtonStyle"
+                    android:layout_gravity="center"
                     android:textColor="#ffffff" />
-            </FrameLayout>
-
-            <FrameLayout
-                android:id="@+id/nounFrame2"
-                android:layout_weight="1.5"
-                android:layout_width="0dip"
-                android:layout_height="match_parent"
-                android:background="#ffffff"
-                android:layout_margin="0dp"
-                android:padding="5dp">
+          
 
                 <Button
-                    android:layout_width="match_parent"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
                     android:text="@string/noun2"
                     android:id="@+id/noun2Button"
                     android:textSize="24sp"
@@ -104,7 +84,7 @@
                     style="@style/greenButtonStyle"
                     android:layout_gravity="center"
                     android:textColor="#ffffff" />
-            </FrameLayout>
+          
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
@@ -114,17 +94,12 @@
             android:weightSum="5"
             android:layout_margin="10dp">
 
-            <FrameLayout
-                android:id="@+id/nounFrame3"
-                android:layout_weight="1.5"
-                android:layout_width="0dip"
-                android:layout_height="match_parent"
-                android:background="#ffffff"
-                android:layout_margin="0dp"
-                android:padding="5dp">
+         
 
                 <Button
-                    android:layout_width="match_parent"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="10dp"
                     android:text="@string/noun3"
                     android:id="@+id/noun3Button"
                     android:textSize="24sp"
@@ -132,18 +107,12 @@
                     style="@style/purpleButtonStyle"
                     android:layout_gravity="center"
                     android:textColor="#ffffff" />
-            </FrameLayout>
-            <FrameLayout
-                android:id="@+id/nounFrame4"
-                android:layout_weight="1.5"
-                android:layout_width="0dip"
-                android:layout_height="match_parent"
-                android:background="#ffffff"
-                android:layout_margin="0dp"
-                android:padding="5dp">
+        
 
                 <Button
-                    android:layout_width="match_parent"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="10dp"
                     android:text="@string/noun4"
                     android:id="@+id/noun4Button"
                     android:textSize="24sp"
@@ -151,18 +120,10 @@
                     style="@style/pinkButtonStyle"
                     android:layout_gravity="center"
                     android:textColor="#ffffff" />
-            </FrameLayout>
-            <FrameLayout
-                android:id="@+id/nounFrame5"
-                android:layout_weight="1.5"
-                android:layout_width="0dip"
-                android:layout_height="match_parent"
-                android:background="#ffffff"
-                android:layout_margin="0dp"
-                android:padding="5dp">
-
+         
                 <Button
-                    android:layout_width="match_parent"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp" 
                     android:text="@string/noun5"
                     android:id="@+id/noun5Button"
                     android:textSize="24sp"
@@ -170,7 +131,7 @@
                     style="@style/blueButtonStyle"
                     android:layout_gravity="center"
                     android:textColor="#ffffff" />
-            </FrameLayout>
+           
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
@@ -180,63 +141,92 @@
             android:weightSum="5"
             android:layout_margin="10dp">
 
-            <FrameLayout
-                android:id="@+id/nounFrame6"
-                android:layout_weight="1.5"
-                android:layout_width="0dip"
-                android:layout_height="match_parent"
-                android:background="#ffffff"
-                android:layout_margin="0dp"
-                android:padding="5dp">
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:text="@string/noun6"
-                    android:id="@+id/noun6Button"
-                    android:textSize="24sp"
-                    android:onClick="getNouns"
-                    style="@style/greenButtonStyle"
-                    android:layout_gravity="center"
-                    android:textColor="#ffffff" />
-            </FrameLayout>
-            <FrameLayout
-                android:id="@+id/nounFrame7"
+            <Button
                 android:layout_weight="1.5"
-                android:layout_width="0dip"
-                android:layout_height="match_parent"
-                android:background="#ffffff"
-                android:layout_margin="0dp"
-                android:padding="5dp">
+                android:layout_width="0dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/noun6"
+                android:id="@+id/noun6Button"
+                android:textSize="24sp"
+                android:onClick="getNouns"
+                style="@style/greenButtonStyle"
+                android:layout_gravity="center"
+                android:textColor="#ffffff" />
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:text="@string/noun7"
-                    android:id="@+id/noun7Button"
-                    android:textSize="24sp"
-                    android:onClick="getNouns"
-                    style="@style/orangeButtonStyle"
-                    android:layout_gravity="center"
-                    android:textColor="#ffffff" />
-            </FrameLayout>
-            <FrameLayout
-                android:id="@+id/nounFrame8"
+
+            <Button
                 android:layout_weight="1.5"
-                android:layout_width="0dip"
-                android:layout_height="match_parent"
-                android:background="#ffffff"
-                android:layout_margin="0dp"
-                android:padding="5dp">
+                android:layout_width="0dp"
+                android:layout_marginRight="7dp"
+                android:text="@string/noun7"
+                android:id="@+id/noun7Button"
+                android:textSize="24sp"
+                android:onClick="getNouns"
+                style="@style/orangeButtonStyle"
+                android:layout_gravity="center"
+                android:textColor="#ffffff" />
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:text="@string/noun8"
-                    android:id="@+id/noun8Button"
-                    android:textSize="24sp"
-                    android:onClick="getNouns"
-                    style="@style/purpleButtonStyle"
-                    android:layout_gravity="center"
-                    android:textColor="#ffffff" />
-            </FrameLayout>
+
+            <Button
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:text="@string/noun8"
+                android:id="@+id/noun8Button"
+                android:textSize="24sp"
+                android:onClick="getNouns"
+                style="@style/redButtonStyle"
+                android:layout_gravity="center"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:weightSum="5"
+            android:layout_margin="10dp">
+
+
+            <Button
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/noun9"
+                android:id="@+id/noun9Button"
+                android:textSize="24sp"
+                android:onClick="getNouns"
+                style="@style/pinkButtonStyle"
+                android:layout_gravity="center"
+                android:textColor="#ffffff" />
+
+
+            <Button
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/noun10"
+                android:id="@+id/noun10Button"
+                android:textSize="24sp"
+                android:onClick="getNouns"
+                style="@style/blueButtonStyle"
+                android:layout_gravity="center"
+                android:textColor="#ffffff" />
+
+
+            <Button
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:text="@string/noun11"
+                android:id="@+id/noun11Button"
+                android:textSize="24sp"
+                android:onClick="getNouns"
+                style="@style/purpleButtonStyle"
+                android:layout_gravity="center"
+                android:textColor="#ffffff" />
+
         </LinearLayout>
 
         <LinearLayout

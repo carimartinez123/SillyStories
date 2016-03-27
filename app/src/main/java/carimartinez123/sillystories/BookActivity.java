@@ -28,6 +28,12 @@ public class BookActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onBackPressed() {
+
+        //disable back button
+    }
+
     public void saveStory(View v){
 
         int i = 1;

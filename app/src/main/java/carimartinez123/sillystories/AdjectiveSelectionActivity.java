@@ -38,16 +38,14 @@ public class AdjectiveSelectionActivity extends AppCompatActivity {
     public void onResume()
     {
         super.onResume();
-        for(String str: BookContent.getAdjs())
-        {
-            Button doneButton = (Button) findViewById(R.id.doneAdjsButton);
-            doneButton.setEnabled(false);
-            BookContent.getAdjs().remove(str);
-            updateAdjNum();
-        }
+
 
     }
+    @Override
+    public void onBackPressed() {
 
+        //disable back button
+    }
 
     private void updateAdjNum()
     {
