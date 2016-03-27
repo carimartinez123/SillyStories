@@ -75,17 +75,18 @@ public class BookContent {
 
                 String next = "<font color='#EE0000'>red</font>";
 
-                text = "One day, <font color='#0000EE'>" + CH1 + "</font> and <font color='#0000EE'>"
+                text = "Ride to the Airport\n\n" +
+                        "One day, <font color='#0000EE'>" + CH1 + "</font> and <font color='#0000EE'>"
                         + CH2 + "</font> got in their <font color='#0000EE'>" + N0 + "</font> to get to the airport. They were going on a trip to <font color='#0000EE'>"
                         + PL + "</font>, and they were very <font color='#0000EE'>" + ADJ1 + "</font>.  They were riding along <font color='#0000EE'>" + ADV1 + "</font> " +
                         "when all of a sudden <font color='#0000EE'>" + CH1 + "</font> said, \"Oh no I forgot my <font color='#0000EE'>" + ADJ2 +
                         "</font> <font color='#0000EE'>" + N1 + "</font>!\" So, they turned their <font color='#0000EE'>" + N0 + "</font> around " +
-                        "and started back to the house. <font color='#0000EE'>" + CH2 + "</font> said \"Uh-oh. We seem to be slowing down.\" \"Oh no!\" said" +
+                        "and started back to the house\n\n. <font color='#0000EE'>" + CH2 + "</font> said \"Uh-oh. We seem to be slowing down.\" \"Oh no!\" said" +
                         " <font color='#0000EE'>" + CH1 + "</font>. \" I forgot to put gas in the <font color='#0000EE'>" + N0 + "</font>!\" So, they stopped" +
                         " at the <font color='#0000EE'>" + ADJ3 + "</font> gas station, <font color='#0000EE'>" + CH2 + "</font> said, \"Wow! " +
                         "This <font color='#0000EE'>" + ADJ3 + "</font> gas sure costs a lot of <font color='#0000EE'>" +  N2 +
                         "</font>!\" <font color='#0000EE'>" + CH1 + "</font> yelled, \"Oh no! I forgot my <font color='#0000EE'>" + N2 +
-                        "</font>!\" Now, they were really <font color='#0000EE'>" + ADJ4 + "</font>. Just then, it started to rain." +
+                        "</font>!\" Now, they were really <font color='#0000EE'>" + ADJ4 + "</font>.\n\n Just then, it started to rain." +
                         " <font color='#0000EE'>" + CH2 + "</font> cried, \"Look out! A <font color='#0000EE'>" + WEATHER1 + "</font>!\" " +
                         " <font color='#0000EE'>" + CH2 + "</font> said, \" Ugh! I hate <font color='#0000EE'>" + WEATHER1 + "</font>s!\"" +
                         " <font color='#0000EE'>" + CH1 + "</font> said, \"Don't worry. We'll get out of here. I found my lucky <font color='#0000EE'>"
@@ -96,7 +97,7 @@ public class BookContent {
                         " dollars, so I'm sure it will pay for the gas we need for our <font color='#0000EE'>" + N0 + "</font>.\" \"Okie dokie\"," +
                         " said <font color='#0000EE'>" + CH3 + "</font>. \"Here is your change.\" <font color='#0000EE'>" +  CH3 + "</font> gave " +
                         "<font color='#0000EE'>" + CH1 + "</font> one <font color='#0000EE'>" + N4 + "</font>, and <font color='#0000EE'>" + CH1 +
-                        "</font> and <font color='#0000EE'>" + CH2 + "</font> were off. \"Oh no!\" said <font color='#0000EE'>" + CH1 +
+                        "</font> and <font color='#0000EE'>" + CH2 + "</font> were off.\n\n \"Oh no!\" said <font color='#0000EE'>" + CH1 +
                         "</font>. \"Look at the time! We're going to be late for our airplane if we don't go get my <font color='#0000EE'>" + N1 +
                         "</font> right now!\" So they got in their <font color='#0000EE'>" + N0 + "</font> and went as fast as they could." +
                         " All of a sudden, <font color='#0000EE'>" + CH2 + "</font> saw some flashing lights. \"Uh-oh!\" said <font color='#0000EE'>" +
@@ -110,10 +111,11 @@ public class BookContent {
                         "<font color='#0000EE'>" + N1 + "</font> right here. I guess you could borrow it for a while if you promise to take good care" +
                         " of it.\" \"WE PROMISE!\" said <font color='#0000EE'>" + CH1 + "</font> and <font color='#0000EE'>" + CH2+ "</font>. Then," +
                         " <font color='#0000EE'>" + CH4 + "</font> said \"You know, I know a <font color='#0000EE'>" + ADJ7 + "</font> shortcut to " +
-                        "the airport from here. Follow me!\" So, <font color='#0000EE'>" + CH1 + "</font> and <font color='#0000EE'>" + CH2 +
+                        "the airport from here. Follow me!\n\n\" So, <font color='#0000EE'>" + CH1 + "</font> and <font color='#0000EE'>" + CH2 +
                         "</font> followed <font color='#0000EE'>" + CH4 + "</font> over the <font color='#0000EE'>" + N5 + "</font>, under the" +
                         " <font color='#0000EE'>" + N6 + "</font>, across the <font color='#0000EE'>" + N7 + "</font> and through the" +
-                        " <font color='#0000EE'>" + ADJ8 + "</font> <font color='#0000EE'>" + N8 + "</font>. Finally, they made it to the airport. Time to fly!";
+                        " <font color='#0000EE'>" + ADJ8 + "</font> <font color='#0000EE'>" + N8 + "</font>. Finally, they made it to the airport. Time to fly!\n\n" +
+                        "THE END";
 
                 System.out.println(text);
                 break;

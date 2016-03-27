@@ -19,11 +19,8 @@ public class BookActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
         TextView storyTextView = (TextView)findViewById(R.id.storyText);
         BookContent.generateText(BookContent.getTitle());
-
         storyTextView.setText(Html.fromHtml(BookContent.getText()));
 
     }
