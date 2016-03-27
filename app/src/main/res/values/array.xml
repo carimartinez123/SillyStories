@@ -44,4 +44,21 @@
         <item>@drawable/link</item>
         <item>@drawable/zelda</item>
     </array>
+
+
+    <string-array name="adv_array">
+        <item>sneakily</item>
+        <item>secretly</item>
+        <item>happily</item>
+        <item>quietly</item>
+        <item>loudly</item>
+        <item>wildly</item>
+        <item>sadly</item>
+        <item>crabbily</item>
+        <item>crazily</item>
+        <item>softly</item>
+        <item>proudly</item>
+        <item>goofily</item>
+    </string-array>
+
 </resources>

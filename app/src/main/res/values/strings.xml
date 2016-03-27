@@ -10,6 +10,7 @@
     <string name="title_activity_adjective_selection">AdjectiveSelectionActivity</string>
     <string name="title_activity_book">BookActivity</string>
     <string name="title_activity_end_menu">EndMenuActivity</string>
+
     <string name="story1">Ride to the Airport</string>
     <string name="story2">Lunchtime</string>
     <string name="story3">Soccer</string>
@@ -32,15 +33,7 @@
     <string name="adj6">"cuddly"</string>
     <string name="adj7">"bubbly"</string>
     <string name="adj8">"zesty"</string>
-    <string name="adv0">"sneakily"</string>
-    <string name="adv1">"secretly"</string>
-    <string name="adv2">"happily"</string>
-    <string name="adv3">"quietly"</string>
-    <string name="adv4">"loudly"</string>
-    <string name="adv5">"wildly"</string>
-    <string name="adv6">"sadly"</string>
-    <string name="adv7">"crabbily"</string>
-    <string name="adv8">"crazily"</string>
+
     <string name="title_activity_delete">DeleteActivity</string>
 
 
