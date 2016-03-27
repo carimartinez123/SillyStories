@@ -33,41 +33,68 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="0dp"
+            android:padding="5dp"
             android:weightSum="5">
+            <FrameLayout
+                android:id="@+id/charFrame0"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:background="#ffffff"
+                android:layout_margin="5dp"
+                android:padding="5dp">
 
-            <ImageButton
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:scaleType="fitXY"
-                android:id="@+id/charButton0"
-                android:layout_below="@+id/charNumTextView"
-                android:layout_centerHorizontal="true"
-                android:onClick="getCharacters"
-                android:src="@drawable/starfire"
-                android:layout_weight="1" />
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/charButton0"
+                    android:layout_below="@+id/charNumTextView"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="getCharacters"
+                    android:src="@drawable/starfire"
+                    android:layout_weight="1" />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/charFrame1"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:background="#ffffff"
+                android:layout_margin="5dp"
+                android:padding="5dp">
 
-            <ImageButton
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:scaleType="fitXY"
-                android:id="@+id/charButton1"
-                android:layout_below="@+id/charNumTextView"
-                android:layout_centerHorizontal="true"
-                android:onClick="getCharacters"
-                android:src="@drawable/beastboy"
-                android:layout_weight="1" />
 
-            <ImageButton
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:scaleType="fitXY"
-                android:id="@+id/charButton2"
-                android:layout_below="@+id/charNumTextView"
-                android:layout_centerHorizontal="true"
-                android:onClick="getCharacters"
-                android:src="@drawable/raven"
-                android:layout_weight="1" />
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/charButton1"
+                    android:layout_below="@+id/charNumTextView"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="getCharacters"
+                    android:src="@drawable/beastboy"
+                    android:layout_weight="1" />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/charFrame2"
+
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:background="#ffffff"
+                android:layout_margin="5dp"
+                android:padding="5dp">
+
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/charButton2"
+                    android:layout_below="@+id/charNumTextView"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="getCharacters"
+                    android:src="@drawable/raven"
+                    android:layout_weight="1" />
+        </FrameLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -75,76 +102,137 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
+            android:padding="5dp"
             android:weightSum="5">
+            <FrameLayout
+                android:id="@+id/charFrame3"
 
-            <ImageButton
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:id="@+id/charButton3"
-                android:onClick="getCharacters"
-                android:scaleType="fitXY"
-                android:src="@drawable/cyborg"
-                android:layout_weight="1" />
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:background="#ffffff"
+                android:layout_margin="5dp"
+                android:padding="5dp">
 
-            <ImageButton
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:id="@+id/charButton4"
-                android:src="@drawable/robin"
-                android:scaleType="fitXY"
-                android:onClick="getCharacters"
-                android:layout_weight="1" />
 
-            <ImageButton
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:id="@+id/charButton5"
-                android:src="@drawable/splatoon_boy"
-                android:scaleType="fitXY"
-                android:onClick="getCharacters"
-                android:layout_weight="1" />
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/charButton3"
+                    android:onClick="getCharacters"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cyborg"
+                    android:layout_weight="1" />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/charFrame4"
 
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:background="#ffffff"
+                android:layout_margin="5dp"
+                android:padding="5dp">
+
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/charButton4"
+                    android:src="@drawable/robin"
+                    android:scaleType="fitXY"
+                    android:onClick="getCharacters"
+                    android:layout_weight="1" />
+        </FrameLayout>
+            <FrameLayout
+                android:id="@+id/charFrame5"
+
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:background="#ffffff"
+                android:layout_margin="5dp"
+                android:padding="5dp">
+
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/charButton5"
+                    android:src="@drawable/splatoon_boy"
+                    android:scaleType="fitXY"
+                    android:onClick="getCharacters"
+                    android:layout_weight="1" />
+        </FrameLayout>
         </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="0dp"
+            android:padding="5dp"
             android:weightSum="5" >
 
-            <ImageButton
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:scaleType="fitXY"
-                android:id="@+id/charButton6"
-                android:layout_below="@+id/splatGirlButton"
-                android:layout_centerHorizontal="true"
-                android:onClick="getCharacters"
-                android:src="@drawable/splatoon_girl"
-                android:layout_weight="1" />
+            <FrameLayout
+                android:id="@+id/charFrame6"
 
-            <ImageButton
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:scaleType="fitXY"
-                android:id="@+id/charButton7"
-                android:layout_below="@+id/link"
-                android:layout_centerHorizontal="true"
-                android:onClick="getCharacters"
-                android:src="@drawable/link"
-                android:layout_weight="1" />
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:background="#ffffff"
+                android:layout_margin="5dp"
+                android:padding="5dp">
 
-            <ImageButton
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:scaleType="fitXY"
-                android:id="@+id/charButton8"
-                android:layout_below="@+id/zelda"
-                android:layout_centerHorizontal="true"
-                android:onClick="getCharacters"
-                android:src="@drawable/zelda"
-                android:layout_weight="1" />
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/charButton6"
+                    android:layout_below="@+id/splatGirlButton"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="getCharacters"
+                    android:src="@drawable/splatoon_girl"
+                    android:layout_weight="1" />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/charFrame7"
+
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:background="#ffffff"
+                android:layout_margin="5dp"
+                android:padding="5dp">
+
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/charButton7"
+                    android:layout_below="@+id/link"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="getCharacters"
+                    android:src="@drawable/link"
+                    android:layout_weight="1" />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/charFrame8"
+
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:background="#ffffff"
+                android:layout_margin="5dp"
+                android:padding="5dp">
+
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/charButton8"
+                    android:layout_below="@+id/zelda"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="getCharacters"
+                    android:src="@drawable/zelda"
+                    android:layout_weight="1" />
+        </FrameLayout>
         </LinearLayout>
 
 
