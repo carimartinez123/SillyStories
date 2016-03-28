@@ -2,6 +2,7 @@ package carimartinez123.sillystories;
 
 import android.content.Intent;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Toast;
@@ -23,12 +24,15 @@ public class SpinnerOnItemSelectedListener implements AdapterView.OnItemSelected
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         savedStoryFilename = parent.getItemAtPosition(position).toString();
+        Log.d("TEST", savedStoryFilename);
         File savedStoryFile = new File(MainActivity.appDirectory.toString() + "/" + savedStoryFilename);
+        Log.d("TEST", savedStoryFile.getName());
         SavedStoryActivity.setFileToDelete(savedStoryFile);
 
         String text = "ERROR READING FILE!";
         try {
             text = readFile(savedStoryFile);
+            Log.d("TEST", text);
         } catch (IOException e) {
             e.printStackTrace();
         }

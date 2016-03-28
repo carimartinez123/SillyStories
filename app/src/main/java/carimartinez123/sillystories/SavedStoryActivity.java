@@ -76,10 +76,10 @@ public class SavedStoryActivity extends AppCompatActivity {
            AlertDialog confirmDeleteBox = AskOption(fileToDelete.getName());
            confirmDeleteBox.show();
            initSpinner();
-           listener.setSavedStoryFilename(savedStorySpinner.getItemAtPosition(0).toString());
+
 
        }
-
+        recreate();
     }
 
     public static void setFileToDelete(File fileToDelete) {
@@ -101,6 +101,7 @@ public class SavedStoryActivity extends AppCompatActivity {
                         filenameList.remove(fileToDelete.getName());
                         adapter.notifyDataSetChanged();
                         dialog.dismiss();
+                        recreate();
                     }
 
                 })

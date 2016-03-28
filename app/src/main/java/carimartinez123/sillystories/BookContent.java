@@ -126,7 +126,7 @@ public class BookContent {
                         " <font color='#0000EE'>" + ADJ8 + "</font> <font color='#0000EE'>" + N8 + "</font>. Finally, they made it to the airport. Time to fly!<br/><br/>" +
                         "THE END";
 
-                System.out.println(text);
+
                 break;
             default:
                 break;

@@ -86,16 +86,28 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="carimartinez123.sillystories.NewStoryActivity" />
         </activity>
-        <activity android:name=".AdverbSelectionActivity" />
+        <activity
+            android:name=".AdverbSelectionActivity"
+            android:screenOrientation="nosensor"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".NumSelectionActivity"
             android:label="@string/title_activity_num"
+            android:screenOrientation="nosensor"
+            android:configChanges="orientation|keyboardHidden|keyboard"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".PlaceSelectionActivity" />
+        <activity
+            android:name=".PlaceSelectionActivity"
+            android:screenOrientation="nosensor"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".WeatherSelectionActivity"
             android:label="@string/title_activity_weather_selection"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:screenOrientation="nosensor"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
