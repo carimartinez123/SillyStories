@@ -9,6 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Random;
+
 public class NounSelectionActivity extends AppCompatActivity {
     private final int SELECTABLE_NOUNS = 12;
     
@@ -29,6 +33,7 @@ public class NounSelectionActivity extends AppCompatActivity {
     private Button doneButton;
     private TextView nounNum;
     private Button[] buttons = new Button[SELECTABLE_NOUNS];
+    private ArrayList<String> nounOptions;
     private String[] nouns;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +41,10 @@ public class NounSelectionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_noun_selection);
         Resources res = getResources();
-        nouns = res.getStringArray(R.array.noun_array);
+        nounOptions = new ArrayList<>(Arrays.asList(res.getStringArray(R.array.noun_array)));
+        nouns = new String[SELECTABLE_NOUNS];
+        Utils.randomize(nounOptions, nouns);
+
         button0 = (Button)findViewById(R.id.noun0Button);
         button1 = (Button)findViewById(R.id.noun1Button);
         button2 = (Button)findViewById(R.id.noun2Button);

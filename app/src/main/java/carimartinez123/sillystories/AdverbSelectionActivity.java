@@ -9,6 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class AdverbSelectionActivity extends AppCompatActivity {
 
     private final int SELECTABLE_ADVS = 12;
@@ -31,13 +34,21 @@ public class AdverbSelectionActivity extends AppCompatActivity {
     private TextView advNum;
     private Button[] buttons = new Button[SELECTABLE_ADVS];
     private String[] advs;
+    private ArrayList<String> adjOptions;
+    
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adverb_selection);
         Resources res = getResources();
-        advs = res.getStringArray(R.array.adv_array);
+        adjOptions = new ArrayList<>(Arrays.asList(res.getStringArray(R.array.adj_array)));
+        advs = new String[SELECTABLE_ADVS];
+        Utils.randomize(adjOptions, advs);
+
+        
         button0 = (Button)findViewById(R.id.adv0Button);
         button1 = (Button)findViewById(R.id.adv1Button);
         button2 = (Button)findViewById(R.id.adv2Button);

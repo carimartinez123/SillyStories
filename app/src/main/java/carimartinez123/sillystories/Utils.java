@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Created by cari_martinez123 on 3/27/2016.
@@ -72,5 +73,16 @@ public class Utils {
         return index_pressed;
     }
 
+    protected static void randomize(ArrayList<String> options, String[] words)
+    {
+        Random rnd = new Random();
+        int idx;
+        for(int i = 0; i < words.length; i++)
+        {
+            idx = rnd.nextInt(options.size());
+            words[i] = options.get(idx);
+            options.remove(idx);
 
+        }
+    }
 }

@@ -14,6 +14,12 @@
         <item>rainbow</item>
         <item>gold</item>
         <item>flower</item>
+        <item>candy</item>
+        <item>jewel</item>
+        <item>treasure</item>
+        <item>piano</item>
+        <item>soup</item>
+        <item>dinosaur</item>
     </string-array>
 
     <string-array name="char_array">
