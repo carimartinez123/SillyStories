@@ -91,5 +91,34 @@
         <item>1000</item>
     </string-array>
 
+    <string-array name="place_array">
+        <item>Las Vegas</item>
+        <item>the zoo</item>
+        <item>California</item>
+        <item>Philadelphia</item>
+        <item>Colorado</item>
+        <item>Santa Fe</item>
+        <item>the desert</item>
+        <item>Notre Dame</item>
+        <item>John Baker</item>
+        <item>the beach</item>
+        <item>Mars</item>
+        <item>Texas</item>
+    </string-array>
+
+    <string-array name="weather_array">
+        <item>tornado</item>
+        <item>blizzard</item>
+        <item>tsunami</item>
+        <item>hurricane</item>
+        <item>dust storm</item>
+        <item>thunderstorm</item>
+        <item>whirlwind</item>
+        <item>rainstorm</item>
+        <item>wind storm</item>
+        <item>hail storm</item>
+        <item>sun shower</item>
+        <item>ice storm</item>
+    </string-array>
 
 </resources>
