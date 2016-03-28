@@ -121,6 +121,17 @@ public class AdjectiveSelectionActivity extends AppCompatActivity {
         }
         else {
             Intent intent = new Intent(this, BookActivity.class);
+
+            if(BookContent.getNumNums() > 0) {
+                intent = new Intent(this, NumActivity.class);
+            }
+           /* else if(BookContent.getNumPlaces() > 0) {
+                intent = new Intent(this, PlaceSelectionActivity.class);
+            }
+            else if(BookContent.getNumWeather() > 0)
+            {
+                intent = new Intent(this, WeatherSelectionActivity.class);
+            }*/
             startActivity(intent);
             finish();
         }

@@ -10,12 +10,9 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"
-
-            android:screenOrientation="nosensor"
             android:configChanges="orientation|keyboardHidden|keyboard"
-
-
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,10 +22,10 @@
         </activity>
         <activity
             android:name=".NewStoryActivity"
-            android:label="@string/title_activity_new_story"
-            android:screenOrientation="nosensor"
             android:configChanges="orientation|keyboardHidden|keyboard"
+            android:label="@string/title_activity_new_story"
             android:parentActivityName=".MainActivity"
+            android:screenOrientation="nosensor"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -36,10 +33,10 @@
         </activity>
         <activity
             android:name=".SavedStoryActivity"
-            android:label="@string/title_activity_saved_story"
-            android:screenOrientation="nosensor"
             android:configChanges="orientation|keyboardHidden|keyboard"
+            android:label="@string/title_activity_saved_story"
             android:parentActivityName=".MainActivity"
+            android:screenOrientation="nosensor"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -47,10 +44,10 @@
         </activity>
         <activity
             android:name=".CharacterSelectionActivity"
-            android:label="@string/title_activity_character_selection"
-            android:screenOrientation="nosensor"
             android:configChanges="orientation|keyboardHidden|keyboard"
+            android:label="@string/title_activity_character_selection"
             android:parentActivityName=".NewStoryActivity"
+            android:screenOrientation="nosensor"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -58,10 +55,10 @@
         </activity>
         <activity
             android:name=".NounSelectionActivity"
-            android:label="@string/title_activity_noun_selection"
-            android:screenOrientation="nosensor"
             android:configChanges="orientation|keyboardHidden|keyboard"
+            android:label="@string/title_activity_noun_selection"
             android:parentActivityName=".NewStoryActivity"
+            android:screenOrientation="nosensor"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -69,10 +66,10 @@
         </activity>
         <activity
             android:name=".AdjectiveSelectionActivity"
-            android:label="@string/title_activity_adjective_selection"
-            android:screenOrientation="nosensor"
             android:configChanges="orientation|keyboardHidden|keyboard"
+            android:label="@string/title_activity_adjective_selection"
             android:parentActivityName=".NewStoryActivity"
+            android:screenOrientation="nosensor"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -80,16 +77,20 @@
         </activity>
         <activity
             android:name=".BookActivity"
-            android:label="@string/title_activity_book"
-            android:screenOrientation="nosensor"
             android:configChanges="orientation|keyboardHidden|keyboard"
+            android:label="@string/title_activity_book"
             android:parentActivityName=".NewStoryActivity"
+            android:screenOrientation="nosensor"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="carimartinez123.sillystories.NewStoryActivity" />
         </activity>
-        <activity android:name=".AdverbSelectionActivity"></activity>
+        <activity android:name=".AdverbSelectionActivity" />
+        <activity
+            android:name=".NumActivity"
+            android:label="@string/title_activity_num"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

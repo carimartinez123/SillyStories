@@ -23,6 +23,9 @@ public class BookContent {
     private static ArrayList<String> nouns = new ArrayList();
     private static ArrayList<String> adjs = new ArrayList();
     private static ArrayList<String> advs = new ArrayList();
+    private static ArrayList<String> nums = new ArrayList();
+    private static ArrayList<String> places = new ArrayList();
+    private static ArrayList<String> weathers = new ArrayList();
 
     public static void generateGrammarTypes(String str)
     {
@@ -67,8 +70,8 @@ public class BookContent {
                 String N8 = nouns.get(8);
 
                 
-                String NUM1 = "7";
-                String NUM2 = "77";
+                String NUM1 = nums.get(0);
+                String NUM2 = nums.get(1);
                 
                 String ADV1 = advs.get(0);
                 String ADV2 = advs.get(1);
@@ -148,6 +151,18 @@ public class BookContent {
 
     public static ArrayList<String> getAdvs() {
         return advs;
+    }
+
+    public static ArrayList<String> getNums() {
+        return nums;
+    }
+
+    public static ArrayList<String> getPlaces() {
+        return places;
+    }
+
+    public static ArrayList<String> getWeathers() {
+        return weathers;
     }
 
     public static String getText() {

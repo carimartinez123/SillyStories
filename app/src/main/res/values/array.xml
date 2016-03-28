@@ -76,5 +76,20 @@
         <item>spiky</item>
     </string-array>
 
+    <string-array name="num_array">
+        <item>0</item>
+        <item>7</item>
+        <item>8</item>
+        <item>12</item>
+        <item>13</item>
+        <item>50</item>
+        <item>77</item>
+        <item>100</item>
+        <item>259</item>
+        <item>500</item>
+        <item>777</item>
+        <item>1000</item>
+    </string-array>
+
 
 </resources>

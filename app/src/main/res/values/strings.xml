@@ -23,8 +23,8 @@
     <string name="story10">Chasing Cats</string>
 
 
-
     <string name="title_activity_delete">DeleteActivity</string>
+    <string name="title_activity_num">NumActivity</string>
 
 
 </resources>
