@@ -25,6 +25,7 @@
 
     <string name="title_activity_delete">DeleteActivity</string>
     <string name="title_activity_num">NumActivity</string>
+    <string name="title_activity_weather_selection">WeatherSelectionActivity</string>
 
 
 </resources>

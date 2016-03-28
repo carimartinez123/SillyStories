@@ -122,10 +122,10 @@ public class NumSelectionActivity extends AppCompatActivity {
             if(BookContent.getNumPlaces() > 0) {
                 intent = new Intent(this, PlaceSelectionActivity.class);
             }
-            /*else if(BookContent.getNumWeather() > 0)
+            else if(BookContent.getNumWeather() > 0)
             {
                 intent = new Intent(this, WeatherSelectionActivity.class);
-            }*/
+            }
             startActivity(intent);
             finish();
         }

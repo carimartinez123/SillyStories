@@ -76,7 +76,7 @@ public class BookContent {
                 String ADV1 = advs.get(0);
                 String ADV2 = advs.get(1);
                 
-                String WEATHER1 = "tornado";
+                String WEATHER1 = weathers.get(0);
 
 
 

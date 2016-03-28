@@ -120,10 +120,10 @@ public class PlaceSelectionActivity extends AppCompatActivity {
 
         } else {
             Intent intent = new Intent(this, BookActivity.class);
-            Log.d("TEST", "Nums list: " + BookContent.getNums().toString());
-            /*if (BookContent.getNumWeather() > 0) {
-                intent = new Intent(this, PlaceSelectionActivity.class);
-            }*/
+
+            if (BookContent.getNumWeather() > 0) {
+                intent = new Intent(this, WeatherSelectionActivity.class);
+            }
 
             startActivity(intent);
             finish();
