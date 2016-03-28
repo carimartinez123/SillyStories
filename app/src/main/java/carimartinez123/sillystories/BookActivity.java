@@ -39,7 +39,7 @@ public class BookActivity extends AppCompatActivity {
         //disable back button
     }
 
-    public void restart()
+    public void restart(View view)
     {
 
 

@@ -34,7 +34,7 @@ public class AdverbSelectionActivity extends AppCompatActivity {
     private TextView advNum;
     private Button[] buttons = new Button[SELECTABLE_ADVS];
     private String[] advs;
-    private ArrayList<String> adjOptions;
+    private ArrayList<String> advOptions;
     
 
 
@@ -44,9 +44,9 @@ public class AdverbSelectionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adverb_selection);
         Resources res = getResources();
-        adjOptions = new ArrayList<>(Arrays.asList(res.getStringArray(R.array.adj_array)));
+        advOptions = new ArrayList<>(Arrays.asList(res.getStringArray(R.array.adv_array)));
         advs = new String[SELECTABLE_ADVS];
-        Utils.randomize(adjOptions, advs);
+        Utils.randomize(advOptions, advs);
 
         
         button0 = (Button)findViewById(R.id.adv0Button);
