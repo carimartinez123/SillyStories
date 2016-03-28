@@ -9,9 +9,9 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".NumSelectionActivity"
-    tools:showIn="@layout/activity_num">
-
+    tools:context="carimartinez123.test.PlaceSelectionActivity"
+    tools:showIn="@layout/activity_place_selection"
+    android:background="#FFFFFF">
 
     <LinearLayout
         android:orientation="vertical"
@@ -29,8 +29,8 @@
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:text="Pick a num:"
-                android:id="@+id/numNumTextView"
+                android:text="Pick a place:"
+                android:id="@+id/placeNumTextView"
                 android:editable="false"
                 android:textColor="#000000"
                 android:textSize="@dimen/abc_action_bar_default_height_material"
@@ -51,9 +51,9 @@
                 android:layout_weight="1.5"
                 android:layout_width="0dp"
                 android:layout_marginRight="10dp"
-                android:id="@+id/num0Button"
+                android:id="@+id/place0Button"
                 android:textSize="24sp"
-                android:onClick="getNums"
+                android:onClick="getPlaces"
                 style="@style/orangeButtonStyle"
                 android:layout_gravity="center"
                 android:textColor="#ffffff" />
@@ -64,9 +64,9 @@
                 android:layout_weight="1.5"
                 android:layout_width="0dp"
                 android:layout_marginRight="10dp"
-                android:id="@+id/num1Button"
+                android:id="@+id/place1Button"
                 android:textSize="24sp"
-                android:onClick="getNums"
+                android:onClick="getPlaces"
                 style="@style/redButtonStyle"
                 android:layout_gravity="center"
                 android:textColor="#ffffff" />
@@ -75,9 +75,9 @@
             <Button
                 android:layout_weight="1.5"
                 android:layout_width="0dp"
-                android:id="@+id/num2Button"
+                android:id="@+id/place2Button"
                 android:textSize="24sp"
-                android:onClick="getNums"
+                android:onClick="getPlaces"
                 style="@style/greenButtonStyle"
                 android:layout_gravity="center"
                 android:textColor="#ffffff" />
@@ -97,9 +97,9 @@
                 android:layout_weight="1.5"
                 android:layout_width="0dp"
                 android:layout_marginRight="10dp"
-                android:id="@+id/num3Button"
+                android:id="@+id/place3Button"
                 android:textSize="24sp"
-                android:onClick="getNums"
+                android:onClick="getPlaces"
                 style="@style/purpleButtonStyle"
                 android:layout_gravity="center"
                 android:textColor="#ffffff" />
@@ -109,9 +109,9 @@
                 android:layout_weight="1.5"
                 android:layout_width="0dp"
                 android:layout_marginRight="10dp"
-                android:id="@+id/num4Button"
+                android:id="@+id/place4Button"
                 android:textSize="24sp"
-                android:onClick="getNums"
+                android:onClick="getPlaces"
                 style="@style/pinkButtonStyle"
                 android:layout_gravity="center"
                 android:textColor="#ffffff" />
@@ -119,9 +119,9 @@
             <Button
                 android:layout_weight="1.5"
                 android:layout_width="0dp"
-                android:id="@+id/num5Button"
+                android:id="@+id/place5Button"
                 android:textSize="24sp"
-                android:onClick="getNums"
+                android:onClick="getPlaces"
                 style="@style/blueButtonStyle"
                 android:layout_gravity="center"
                 android:textColor="#ffffff" />
@@ -140,9 +140,9 @@
                 android:layout_weight="1.5"
                 android:layout_width="0dp"
                 android:layout_marginRight="10dp"
-                android:id="@+id/num6Button"
+                android:id="@+id/place6Button"
                 android:textSize="24sp"
-                android:onClick="getNums"
+                android:onClick="getPlaces"
                 style="@style/greenButtonStyle"
                 android:layout_gravity="center"
                 android:textColor="#ffffff" />
@@ -152,9 +152,9 @@
                 android:layout_weight="1.5"
                 android:layout_width="0dp"
                 android:layout_marginRight="7dp"
-                android:id="@+id/num7Button"
+                android:id="@+id/place7Button"
                 android:textSize="24sp"
-                android:onClick="getNums"
+                android:onClick="getPlaces"
                 style="@style/orangeButtonStyle"
                 android:layout_gravity="center"
                 android:textColor="#ffffff" />
@@ -163,9 +163,9 @@
             <Button
                 android:layout_weight="1.5"
                 android:layout_width="0dp"
-                android:id="@+id/num8Button"
+                android:id="@+id/place8Button"
                 android:textSize="24sp"
-                android:onClick="getNums"
+                android:onClick="getPlaces"
                 style="@style/redButtonStyle"
                 android:layout_gravity="center"
                 android:textColor="#ffffff" />
@@ -185,9 +185,9 @@
                 android:layout_weight="1.5"
                 android:layout_width="0dp"
                 android:layout_marginRight="10dp"
-                android:id="@+id/num9Button"
+                android:id="@+id/place9Button"
                 android:textSize="24sp"
-                android:onClick="getNums"
+                android:onClick="getPlaces"
                 style="@style/pinkButtonStyle"
                 android:layout_gravity="center"
                 android:textColor="#ffffff" />
@@ -197,9 +197,9 @@
                 android:layout_weight="1.5"
                 android:layout_width="0dp"
                 android:layout_marginRight="10dp"
-                android:id="@+id/num10Button"
+                android:id="@+id/place10Button"
                 android:textSize="24sp"
-                android:onClick="getNums"
+                android:onClick="getPlaces"
                 style="@style/blueButtonStyle"
                 android:layout_gravity="center"
                 android:textColor="#ffffff" />
@@ -208,9 +208,9 @@
             <Button
                 android:layout_weight="1.5"
                 android:layout_width="0dp"
-                android:id="@+id/num11Button"
+                android:id="@+id/place11Button"
                 android:textSize="24sp"
-                android:onClick="getNums"
+                android:onClick="getPlaces"
                 style="@style/purpleButtonStyle"
                 android:layout_gravity="center"
                 android:textColor="#ffffff" />
@@ -230,9 +230,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Done"
-                android:id="@+id/doneNumsButton"
+                android:id="@+id/donePlacesButton"
                 android:layout_gravity="center_vertical"
-                android:onClick="numsDone"
+                android:onClick="placesDone"
                 android:layout_weight="0.5" />
         </LinearLayout>
     </LinearLayout>

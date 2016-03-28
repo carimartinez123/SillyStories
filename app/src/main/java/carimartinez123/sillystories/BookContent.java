@@ -48,7 +48,7 @@ public class BookContent {
                 String CH3 = chars.get(2);
                 String CH4 = chars.get(3);
                 
-                String PL = "Las Vegas";
+                String PL = places.get(0);
                 
                 String ADJ1 = adjs.get(0);
                 String ADJ2 = adjs.get(1);

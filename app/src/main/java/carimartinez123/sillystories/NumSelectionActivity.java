@@ -8,7 +8,7 @@ import android.content.res.Resources;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
-public class NumActivity extends AppCompatActivity {
+public class NumSelectionActivity extends AppCompatActivity {
     private final int SELECTABLE_NUMS = 12;
 
     private boolean [] numSelected = new boolean[SELECTABLE_NUMS];
@@ -119,10 +119,10 @@ public class NumActivity extends AppCompatActivity {
         else {
             Intent intent = new Intent(this, BookActivity.class);
             Log.d("TEST", "Nums list: " + BookContent.getNums().toString());
-           /* if(BookContent.getNumPlaces() > 0) {
+            if(BookContent.getNumPlaces() > 0) {
                 intent = new Intent(this, PlaceSelectionActivity.class);
             }
-            else if(BookContent.getNumWeather() > 0)
+            /*else if(BookContent.getNumWeather() > 0)
             {
                 intent = new Intent(this, WeatherSelectionActivity.class);
             }*/

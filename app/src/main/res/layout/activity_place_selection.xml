@@ -5,10 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".NumSelectionActivity">
+    tools:context="carimartinez123.sillystories.PlaceSelectionActivity">
 
 
-    <include layout="@layout/content_num" />
-
+    <include layout="@layout/content_place_selection" />
 
 </android.support.design.widget.CoordinatorLayout>

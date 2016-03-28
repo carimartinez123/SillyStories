@@ -88,9 +88,10 @@
         </activity>
         <activity android:name=".AdverbSelectionActivity" />
         <activity
-            android:name=".NumActivity"
+            android:name=".NumSelectionActivity"
             android:label="@string/title_activity_num"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PlaceSelectionActivity"></activity>
     </application>
 
 </manifest>
