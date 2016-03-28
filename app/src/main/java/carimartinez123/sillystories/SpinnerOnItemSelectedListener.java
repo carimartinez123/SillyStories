@@ -17,13 +17,15 @@ import java.util.Scanner;
 /**
  * Created by cari_martinez123 on 3/15/2016.
  */
+
 public class SpinnerOnItemSelectedListener implements AdapterView.OnItemSelectedListener {
+    private String savedStoryFilename;
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        String savedStoryFilename = parent.getItemAtPosition(position).toString();
+        savedStoryFilename = parent.getItemAtPosition(position).toString();
         File savedStoryFile = new File(MainActivity.appDirectory.toString() + "/" + savedStoryFilename);
         SavedStoryActivity.setFileToDelete(savedStoryFile);
-        System.out.println(savedStoryFile.getName());
+
         String text = "ERROR READING FILE!";
         try {
             text = readFile(savedStoryFile);
@@ -38,7 +40,18 @@ public class SpinnerOnItemSelectedListener implements AdapterView.OnItemSelected
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
+        savedStoryFilename = parent.getItemAtPosition(0).toString();
+        File savedStoryFile = new File(MainActivity.appDirectory.toString() + "/" + savedStoryFilename);
+        SavedStoryActivity.setFileToDelete(savedStoryFile);
 
+        String text = "ERROR READING FILE!";
+        try {
+            text = readFile(savedStoryFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        BookContent.setText(text);
+        BookContent.setTitle(savedStoryFilename.substring(0, savedStoryFilename.lastIndexOf('.')));
     }
 
     private String readFile(File filename) throws IOException {
@@ -58,4 +71,7 @@ public class SpinnerOnItemSelectedListener implements AdapterView.OnItemSelected
         }
     }
 
+    public void setSavedStoryFilename(String savedStoryFilename) {
+        this.savedStoryFilename = savedStoryFilename;
+    }
 }

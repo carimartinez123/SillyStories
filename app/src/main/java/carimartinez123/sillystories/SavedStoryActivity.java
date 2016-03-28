@@ -23,6 +23,8 @@ public class SavedStoryActivity extends AppCompatActivity {
     private static File fileToDelete = null;
     private static ArrayList<String> filenameList;
     private Bundle savedInstanceState;
+    private SpinnerOnItemSelectedListener listener;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +38,9 @@ public class SavedStoryActivity extends AppCompatActivity {
 
 
     public void initSpinner(){
-        savedStorySpinner = (Spinner) findViewById(R.id.savedStorySpinner);
+
         filenameList = getSavedFiles();
-        adapter = new ArrayAdapter<String>(SavedStoryActivity.this, R.layout.spinner_layout, filenameList);
+        adapter = new ArrayAdapter<>(SavedStoryActivity.this, R.layout.spinner_layout, filenameList);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         savedStorySpinner.setAdapter(adapter);
         addListenerOnSpinnerItemSelection();
@@ -55,8 +57,8 @@ public class SavedStoryActivity extends AppCompatActivity {
     }
 
     public void addListenerOnSpinnerItemSelection() {
-
-        savedStorySpinner.setOnItemSelectedListener(new SpinnerOnItemSelectedListener());
+        listener = (new SpinnerOnItemSelectedListener());
+        savedStorySpinner.setOnItemSelectedListener(listener);
     }
 
     public void startBook(View v){
@@ -71,8 +73,10 @@ public class SavedStoryActivity extends AppCompatActivity {
 
        if(fileToDelete != null)
        {
-           AlertDialog confirmDeleteBox = AskOption();
+           AlertDialog confirmDeleteBox = AskOption(fileToDelete.getName());
            confirmDeleteBox.show();
+           initSpinner();
+           listener.setSavedStoryFilename(savedStorySpinner.getItemAtPosition(0).toString());
 
        }
 
@@ -83,11 +87,11 @@ public class SavedStoryActivity extends AppCompatActivity {
 
     }
 
-    private AlertDialog AskOption() {
+    private AlertDialog AskOption(String filename) {
         AlertDialog myQuittingDialogBox =new AlertDialog.Builder(this)
                 //set message, title, and icon
                 .setTitle("Delete")
-                .setMessage("Do you want to Delete")
+                .setMessage("Do you want to delete " + filename + "?")
 
 
                 .setPositiveButton("Delete", new DialogInterface.OnClickListener() {
