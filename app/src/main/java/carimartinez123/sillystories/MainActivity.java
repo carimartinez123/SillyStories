@@ -41,16 +41,8 @@ public class MainActivity extends AppCompatActivity {
     }
     public void startStory(View view)
     {
-        Intent intent;
-        if(view.getId() == R.id.savedStoryButton) {
-            savedButton.setTextColor(Color.WHITE);
-            intent = new Intent(this, SavedStoryActivity.class);
-        }
-        else
-        {
-            newButton.setTextColor(Color.WHITE);
-            intent = new Intent(this, NewStoryActivity.class);
-        }
+        Intent intent = new Intent(this, NewStoryActivity.class);
+        newButton.setTextColor(Color.WHITE);
         startActivity(intent);
     }
 
