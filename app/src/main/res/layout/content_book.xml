@@ -42,7 +42,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="1.56"
             android:layout_height="0dp"
             android:weightSum = "5"
             android:padding="20dp">
@@ -55,7 +55,6 @@
                 android:text="SAVE"
                 android:id="@+id/saveButton"
                 android:onClick="saveStory"
-                android:layout_gravity="left"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp" />
 
