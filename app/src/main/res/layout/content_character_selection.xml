@@ -27,7 +27,7 @@
             android:id="@+id/charNumTextView"
             android:editable="false"
             android:textColor="#000000"
-            android:textSize="@dimen/abc_action_bar_default_height_material"
+            android:textSize="@dimen/text_large"
             android:textStyle="bold" />
 
         <LinearLayout
