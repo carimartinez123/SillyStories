@@ -37,7 +37,7 @@ public class SpinnerOnItemSelectedListener implements AdapterView.OnItemSelected
             e.printStackTrace();
         }
         BookContent.setText(text);
-        BookContent.setTitle(savedStoryFilename.substring(0, savedStoryFilename.lastIndexOf('.')));
+        BookContent.setTitle(text.substring(0, '\n'));
 
     }
 
