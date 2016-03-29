@@ -64,6 +64,7 @@ public class SavedStoryActivity extends AppCompatActivity {
     public void startBook(View v){
 
         Intent intent = new Intent(this, BookActivity.class);
+        intent.putExtra("savedStory", true);
         startActivity(intent);
         finish();
 

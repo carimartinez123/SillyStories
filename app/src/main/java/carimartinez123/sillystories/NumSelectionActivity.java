@@ -126,6 +126,7 @@ public class NumSelectionActivity extends AppCompatActivity {
             {
                 intent = new Intent(this, WeatherSelectionActivity.class);
             }
+            intent.putExtra("savedStory", false);
             startActivity(intent);
             finish();
         }

@@ -124,7 +124,7 @@ public class PlaceSelectionActivity extends AppCompatActivity {
             if (BookContent.getNumWeather() > 0) {
                 intent = new Intent(this, WeatherSelectionActivity.class);
             }
-
+            intent.putExtra("savedStory", false);
             startActivity(intent);
             finish();
 

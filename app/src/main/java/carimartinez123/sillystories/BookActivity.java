@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,12 +22,20 @@ import java.io.PrintWriter;
 import java.util.List;
 
 public class BookActivity extends AppCompatActivity {
-
+    private boolean savedStory;
+    private Button saveButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book);
+        savedStory = getIntent().getExtras().getBoolean("savedStory");
+
+        saveButton = (Button)findViewById(R.id.saveButton);
+        if(savedStory)
+        {
+            saveButton.setEnabled(false);
+        }
         TextView storyTextView = (TextView)findViewById(R.id.storyText);
         BookContent.generateText(BookContent.getTitle());
         storyTextView.setText(Html.fromHtml(BookContent.getText()));

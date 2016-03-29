@@ -119,6 +119,7 @@ public class WeatherSelectionActivity extends AppCompatActivity {
         } else {
             Intent intent = new Intent(this, BookActivity.class);
             Log.d("TEST", "Weathers list: " + BookContent.getWeathers().toString());
+            intent.putExtra("savedStory", false);
             startActivity(intent);
             finish();
 
