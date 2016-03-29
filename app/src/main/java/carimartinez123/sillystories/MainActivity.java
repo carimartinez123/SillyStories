@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        resetData();
         setContentView(R.layout.activity_main);
         newButton = (Button)findViewById(R.id.newStoryButton);
         savedButton = (Button)findViewById(R.id.savedStoryButton);
@@ -37,6 +38,18 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         savedButton.setTextColor(Color.BLACK);
         newButton.setTextColor(Color.BLACK);
+
+    }
+
+    public void resetData()
+    {
+        BookContent.getChars().clear();
+        BookContent.getNouns().clear();
+        BookContent.getAdjs().clear();
+        BookContent.getAdvs().clear();
+        BookContent.getNums().clear();
+        BookContent.getPlaces().clear();
+        BookContent.getWeathers().clear();
 
     }
     public void startStory(View view)
