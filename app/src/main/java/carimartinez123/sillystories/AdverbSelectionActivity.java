@@ -93,7 +93,7 @@ public class AdverbSelectionActivity extends AppCompatActivity {
 
         doneButton.setEnabled(false);
         Utils.setButtonText(buttons, advs);
-        Utils.updateWordTypeNum(advNum, doneButton, BookContent.getNumAdvs(), BookContent.getAdvs().size());
+        Utils.updateWordTypeNum(advNum, doneButton, BookContent.getNumAdvs(), BookContent.getAdvs().size(), "adverb");
 
     }
     @Override
@@ -117,7 +117,7 @@ public class AdverbSelectionActivity extends AppCompatActivity {
         int index_pressed = Utils.getIndex(buttons, view);
         boolean needWords = BookContent.getAdvs().size() < BookContent.getNumAdvs();
         Utils.selectWord(needWords, advSelected, buttons, index_pressed, BookContent.getAdvs(), advs);
-        Utils.updateWordTypeNum(advNum, doneButton, BookContent.getNumAdvs(), BookContent.getAdvs().size());
+        Utils.updateWordTypeNum(advNum, doneButton, BookContent.getNumAdvs(), BookContent.getAdvs().size(), "adverb");
 
 
     }

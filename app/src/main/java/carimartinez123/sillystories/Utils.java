@@ -21,16 +21,16 @@ public class Utils {
         }
     }
 
-    protected static void updateWordTypeNum(TextView wordNum, Button doneButton, int wordsNeeded, int wordsSelected)
+    protected static void updateWordTypeNum(TextView wordNum, Button doneButton, int wordsNeeded, int wordsSelected, String wordType)
     {
         int wordsLeft = wordsNeeded - wordsSelected;
         if(wordsLeft > 1) {
-            wordNum.setText("Pick " + wordsLeft + ":");
+            wordNum.setText("Pick " + wordsLeft + " " + wordType + "s:");
             doneButton.setEnabled(false);
         }
         else if (wordsLeft == 1)
         {
-            wordNum.setText("Pick " + wordsLeft + ":");
+            wordNum.setText("Pick " + wordsLeft + " " + wordType + ":");
             doneButton.setEnabled(false);
         }
         else

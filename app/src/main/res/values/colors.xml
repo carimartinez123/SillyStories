@@ -14,5 +14,14 @@
     <color name="darkGray">#505050</color>
     <color name="lightGray">#909090</color>
     <color name="yellow">#ffed5d</color>
+    <color name="noun">#8F29C8</color>
+    <color name="adj">#bb0000</color>
+    <color name="adv">#009944</color>
+    <color name="character">#0000EE</color>
+    <color name="num">#dc007c</color>
+    <color name="place">#cc5509</color>
+    <color name="weather">#007777</color>
+
+
 
 </resources>

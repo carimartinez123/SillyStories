@@ -181,7 +181,7 @@ public class CharacterSelectionActivity extends AppCompatActivity {
         }
 
 
-        Utils.updateWordTypeNum(charNum, doneButton, BookContent.getNumChars(), BookContent.getChars().size());
+        Utils.updateWordTypeNum(charNum, doneButton, BookContent.getNumChars(), BookContent.getChars().size(), "character");
     }
 
       public void charsDone(View view){

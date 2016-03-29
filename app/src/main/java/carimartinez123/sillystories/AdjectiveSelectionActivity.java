@@ -91,7 +91,7 @@ public class AdjectiveSelectionActivity extends AppCompatActivity {
 
         doneButton.setEnabled(false);
         Utils.setButtonText(buttons, adjs);
-        Utils.updateWordTypeNum(adjNum, doneButton, BookContent.getNumAdjs(), BookContent.getAdjs().size());
+        Utils.updateWordTypeNum(adjNum, doneButton, BookContent.getNumAdjs(), BookContent.getAdjs().size(), "adjective");
 
     }
     @Override
@@ -115,7 +115,7 @@ public class AdjectiveSelectionActivity extends AppCompatActivity {
         int index_pressed = Utils.getIndex(buttons, view);
         boolean needWords = BookContent.getAdjs().size() < BookContent.getNumAdjs();
         Utils.selectWord(needWords, adjSelected, buttons, index_pressed, BookContent.getAdjs(), adjs);
-        Utils.updateWordTypeNum(adjNum, doneButton, BookContent.getNumAdjs(), BookContent.getAdjs().size());
+        Utils.updateWordTypeNum(adjNum, doneButton, BookContent.getNumAdjs(), BookContent.getAdjs().size(), "adjective");
 
 
     }

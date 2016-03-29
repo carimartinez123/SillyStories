@@ -82,7 +82,7 @@ public class WeatherSelectionActivity extends AppCompatActivity {
 
         doneButton.setEnabled(false);
         Utils.setButtonText(buttons, weathers);
-        Utils.updateWordTypeNum(weatherNum, doneButton, BookContent.getNumWeather(), BookContent.getWeathers().size());
+        Utils.updateWordTypeNum(weatherNum, doneButton, BookContent.getNumWeather(), BookContent.getWeathers().size(), "storm");
 
     }
     @Override
@@ -106,7 +106,7 @@ public class WeatherSelectionActivity extends AppCompatActivity {
         int index_pressed = Utils.getIndex(buttons, view);
         boolean needWords = BookContent.getWeathers().size() < BookContent.getNumWeather();
         Utils.selectWord(needWords, weatherSelected, buttons, index_pressed, BookContent.getWeathers(), weathers);
-        Utils.updateWordTypeNum(weatherNum, doneButton, BookContent.getNumWeather(), BookContent.getWeathers().size());
+        Utils.updateWordTypeNum(weatherNum, doneButton, BookContent.getNumWeather(), BookContent.getWeathers().size(), "storm");
 
 
     }

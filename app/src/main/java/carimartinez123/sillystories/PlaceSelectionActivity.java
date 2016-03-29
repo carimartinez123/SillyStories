@@ -84,7 +84,7 @@ public class PlaceSelectionActivity extends AppCompatActivity {
 
         doneButton.setEnabled(false);
         Utils.setButtonText(buttons, places);
-        Utils.updateWordTypeNum(placeNum, doneButton, BookContent.getNumPlaces(), BookContent.getPlaces().size());
+        Utils.updateWordTypeNum(placeNum, doneButton, BookContent.getNumPlaces(), BookContent.getPlaces().size(), "place");
 
     }
     @Override
@@ -108,7 +108,7 @@ public class PlaceSelectionActivity extends AppCompatActivity {
         int index_pressed = Utils.getIndex(buttons, view);
         boolean needWords = BookContent.getPlaces().size() < BookContent.getNumPlaces();
         Utils.selectWord(needWords, placeSelected, buttons, index_pressed, BookContent.getPlaces(), places);
-        Utils.updateWordTypeNum(placeNum, doneButton, BookContent.getNumPlaces(), BookContent.getPlaces().size());
+        Utils.updateWordTypeNum(placeNum, doneButton, BookContent.getNumPlaces(), BookContent.getPlaces().size(), "place");
 
 
     }

@@ -32,7 +32,7 @@
                 android:text="Pick a noun:"
                 android:id="@+id/nounNumTextView"
                 android:editable="false"
-                android:textColor="#000000"
+                android:textColor="@color/noun"
                 android:textSize="@dimen/text_large"
                 android:textStyle="bold" />
         </LinearLayout>

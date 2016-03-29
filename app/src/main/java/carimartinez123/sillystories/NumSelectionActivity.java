@@ -80,7 +80,7 @@ public class NumSelectionActivity extends AppCompatActivity {
 
         doneButton.setEnabled(false);
         Utils.setButtonText(buttons, nums);
-        Utils.updateWordTypeNum(numNum, doneButton, BookContent.getNumNums(), BookContent.getNums().size());
+        Utils.updateWordTypeNum(numNum, doneButton, BookContent.getNumNums(), BookContent.getNums().size(), "number");
 
     }
     @Override
@@ -104,7 +104,7 @@ public class NumSelectionActivity extends AppCompatActivity {
         int index_pressed = Utils.getIndex(buttons, view);
         boolean needWords = BookContent.getNums().size() < BookContent.getNumNums();
         Utils.selectWord(needWords, numSelected, buttons, index_pressed, BookContent.getNums(), nums);
-        Utils.updateWordTypeNum(numNum, doneButton, BookContent.getNumNums(), BookContent.getNums().size());
+        Utils.updateWordTypeNum(numNum, doneButton, BookContent.getNumNums(), BookContent.getNums().size(), "number");
 
 
     }

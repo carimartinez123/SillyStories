@@ -89,7 +89,7 @@ public class NounSelectionActivity extends AppCompatActivity {
 
         doneButton.setEnabled(false);
         Utils.setButtonText(buttons, nouns);
-        Utils.updateWordTypeNum(nounNum, doneButton, BookContent.getNumNouns(), BookContent.getNouns().size());
+        Utils.updateWordTypeNum(nounNum, doneButton, BookContent.getNumNouns(), BookContent.getNouns().size(), "noun");
 
     }
     @Override
@@ -113,7 +113,7 @@ public class NounSelectionActivity extends AppCompatActivity {
         int index_pressed = Utils.getIndex(buttons, view);
         boolean needWords = BookContent.getNouns().size() < BookContent.getNumNouns();
         Utils.selectWord(needWords, nounSelected, buttons, index_pressed, BookContent.getNouns(), nouns);
-        Utils.updateWordTypeNum(nounNum, doneButton, BookContent.getNumNouns(), BookContent.getNouns().size());
+        Utils.updateWordTypeNum(nounNum, doneButton, BookContent.getNumNouns(), BookContent.getNouns().size(), "noun");
 
 
     }
