@@ -52,7 +52,7 @@
             android:text="@string/story2"
             android:id="@+id/story2Button"
             android:textSize="@dimen/text"
-            android:onClick="goToSelections"
+            android:onClick="unimplemented"
             style="@style/redButtonStyle"
             android:layout_gravity="center_horizontal"
             android:layout_margin="5dp" />
@@ -64,7 +64,7 @@
             android:text="@string/story3"
             android:id="@+id/story3Button"
             android:textSize="@dimen/text"
-            android:onClick="goToSelections"
+            android:onClick="unimplemented"
             style="@style/purpleButtonStyle"
             android:layout_gravity="center_horizontal"
             android:layout_margin="5dp" />
@@ -76,7 +76,7 @@
             android:text="@string/story4"
             android:id="@+id/story4Button"
             android:textSize="@dimen/text"
-            android:onClick="goToSelections"
+            android:onClick="unimplemented"
             style="@style/blueButtonStyle"
             android:layout_gravity="center_horizontal"
             android:layout_margin="5dp" />
@@ -88,7 +88,7 @@
             android:text="@string/story5"
             android:id="@+id/story5Button"
             android:textSize="@dimen/text"
-            android:onClick="goToSelections"
+            android:onClick="unimplemented"
             style="@style/orangeButtonStyle"
             android:layout_gravity="center_horizontal"
             android:layout_margin="5dp" />
@@ -100,7 +100,7 @@
             android:text="@string/story6"
             android:id="@+id/story6Button"
             android:textSize="@dimen/text"
-            android:onClick="goToSelections"
+            android:onClick="unimplemented"
             style="@style/pinkButtonStyle"
             android:layout_gravity="center_horizontal"
             android:layout_margin="5dp" />
@@ -112,7 +112,7 @@
             android:text="@string/story7"
             android:id="@+id/story7Button"
             android:textSize="@dimen/text"
-            android:onClick="goToSelections"
+            android:onClick="unimplemented"
             style="@style/blueButtonStyle"
             android:layout_gravity="center_horizontal"
             android:layout_margin="5dp" />
@@ -124,7 +124,7 @@
             android:text="@string/story8"
             android:id="@+id/story8Button"
             android:textSize="@dimen/text"
-            android:onClick="goToSelections"
+            android:onClick="unimplemented"
             style="@style/greenButtonStyle"
             android:layout_gravity="center_horizontal"
             android:layout_margin="5dp" />
@@ -136,7 +136,7 @@
             android:text="@string/story9"
             android:id="@+id/story9Button"
             android:textSize="@dimen/text"
-            android:onClick="goToSelections"
+            android:onClick="unimplemented"
             style="@style/orangeButtonStyle"
             android:layout_gravity="center_horizontal"
             android:layout_margin="5dp" />
@@ -148,7 +148,7 @@
             android:text="@string/story10"
             android:id="@+id/story10Button"
             android:textSize="@dimen/text"
-            android:onClick="goToSelections"
+            android:onClick="unimplemented"
             style="@style/purpleButtonStyle"
             android:layout_gravity="center_horizontal"
             android:layout_margin="5dp" />
