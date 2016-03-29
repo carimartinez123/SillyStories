@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import java.io.File;
 
@@ -58,5 +59,30 @@ public class MainActivity extends AppCompatActivity {
         newButton.setTextColor(Color.WHITE);
         startActivity(intent);
     }
+
+    public void startSavedStory(View view)
+    {
+        File[] fileList = getFilesDir().listFiles();
+        if(fileList.length < 1)
+        {
+            Toast unimplementedToast = Toast.makeText(this, "No saved stories!", Toast.LENGTH_LONG);
+            unimplementedToast.show();
+        }
+        else
+        {
+            Intent intent = new Intent(this, SavedStoryActivity.class);
+            savedButton.setTextColor(Color.WHITE);
+            startActivity(intent);
+        }
+    }
+    public void customize(View view)
+
+        {
+            Toast unimplementedToast = Toast.makeText(this, "Not yet implemented", Toast.LENGTH_LONG);
+            unimplementedToast.show();
+        }
+
+
+
 
 }

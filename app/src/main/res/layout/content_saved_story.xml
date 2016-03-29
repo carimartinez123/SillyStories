@@ -29,7 +29,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="54dp"
-            android:textSize="48dp" />
+            android:textSize="@dimen/text_large" />
 
         <Spinner
             android:layout_width="match_parent"
@@ -39,6 +39,11 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:spinnerMode="dropdown" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dip"></FrameLayout>
 
         <LinearLayout
             android:orientation="horizontal"
@@ -53,6 +58,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Start Story"
+                android:textSize="@dimen/text"
                 android:id="@+id/startStoryButton"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
@@ -70,6 +76,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Delete Story"
+                android:textSize="@dimen/text"
                 android:id="@+id/deleteStoryButton"
                 android:layout_margin="@dimen/activity_horizontal_margin"
                 android:layout_alignParentBottom="true"
@@ -78,5 +85,6 @@
                 style="@style/redButtonStyle" />
 
         </LinearLayout>
+
     </LinearLayout>
 </RelativeLayout>
