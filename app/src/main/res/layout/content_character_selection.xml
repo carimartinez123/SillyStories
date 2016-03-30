@@ -54,7 +54,6 @@
                     android:layout_below="@+id/charNumTextView"
                     android:layout_centerHorizontal="true"
                     android:onClick="getCharacters"
-                    android:src="@drawable/starfire"
                     android:layout_weight="1" />
             </FrameLayout>
             <FrameLayout
@@ -75,7 +74,6 @@
                     android:layout_below="@+id/charNumTextView"
                     android:layout_centerHorizontal="true"
                     android:onClick="getCharacters"
-                    android:src="@drawable/beastboy"
                     android:layout_weight="1" />
             </FrameLayout>
             <FrameLayout
@@ -96,7 +94,6 @@
                     android:layout_below="@+id/charNumTextView"
                     android:layout_centerHorizontal="true"
                     android:onClick="getCharacters"
-                    android:src="@drawable/raven"
                     android:layout_weight="1" />
         </FrameLayout>
         </LinearLayout>
@@ -124,7 +121,6 @@
                     android:id="@+id/charButton3"
                     android:layout_centerHorizontal="true"
                     android:onClick="getCharacters"
-                    android:src="@drawable/cyborg"
                     android:layout_weight="1" />
             </FrameLayout>
             <FrameLayout
@@ -144,7 +140,6 @@
                     android:id="@+id/charButton4"
                     android:layout_centerHorizontal="true"
                     android:onClick="getCharacters"
-                    android:src="@drawable/robin"
                     android:layout_weight="1" />
             </FrameLayout>
             <FrameLayout
@@ -164,7 +159,6 @@
                     android:id="@+id/charButton5"
                     android:layout_centerHorizontal="true"
                     android:onClick="getCharacters"
-                    android:src="@drawable/splatoon_boy"
                     android:layout_weight="1" />
             </FrameLayout>
         </LinearLayout>
@@ -192,7 +186,6 @@
                     android:id="@+id/charButton6"
                     android:layout_centerHorizontal="true"
                     android:onClick="getCharacters"
-                    android:src="@drawable/splatoon_girl"
                     android:layout_weight="1" />
             </FrameLayout>
             <FrameLayout
@@ -212,7 +205,6 @@
                     android:id="@+id/charButton7"
                     android:layout_centerHorizontal="true"
                     android:onClick="getCharacters"
-                    android:src="@drawable/link"
                     android:layout_weight="1" />
             </FrameLayout>
             <FrameLayout
@@ -232,7 +224,6 @@
                     android:id="@+id/charButton8"
                     android:layout_centerHorizontal="true"
                     android:onClick="getCharacters"
-                    android:src="@drawable/zelda"
                     android:layout_weight="1" />
             </FrameLayout>
         </LinearLayout>

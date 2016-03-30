@@ -122,11 +122,11 @@ public class NounSelectionActivity extends AppCompatActivity {
     {
 
         if(BookContent.getNouns().size() < BookContent.getNumNouns()) {
-            Log.d("TEST", "Size of BookContent.nouns less than required number of nouns for this story!");
+
 
         }
         else {
-            Log.d("TEST", "Nouns list: " + BookContent.getNouns().toString());
+
             Intent intent = new Intent(this, AdverbSelectionActivity.class);
             startActivity(intent);
             finish();

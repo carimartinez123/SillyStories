@@ -6,4 +6,7 @@ http://zeldawiki.org/Gallery:Zelda
 Code for reading text file:
 http://stackoverflow.com/questions/326390/how-to-create-a-java-string-from-the-contents-of-a-file
 
+Image for icon:
+https://commons.wikimedia.org/wiki/File:Smiley_green_alien.svg
+
 Thanks to Skye Martinez for rigorous testing and Jana Hartman for testing and suggesting some text color changes

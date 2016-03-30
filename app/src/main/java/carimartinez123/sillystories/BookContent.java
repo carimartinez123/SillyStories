@@ -29,58 +29,107 @@ public class BookContent {
 
     public static void generateGrammarTypes(String str)
     {
-        numChars = 4;
-        numNouns = 10;
-        numAdjs = 8;
-        numNums = 2;
-        numPlaces = 1;
-        numWeather = 1;
-        numAdvs = 2;
+        switch(str) {
+            case "Ride to the Airport":
+                numChars = 4;
+                numNouns = 10;
+                numAdjs = 8;
+                numNums = 2;
+                numPlaces = 1;
+                numWeather = 1;
+                numAdvs = 2;
+
+                break;
+            case "Lunchtime":
+                numChars = 2;
+                numNouns = 1;
+                numAdjs = 2;
+                numNums = 0;
+                numPlaces = 0;
+                numWeather = 0;
+                numAdvs = 1;
+
+                break;
+            default:
+                break;
+        }
     }
     public static void generateText(String str)
     {
         title = str;
+        String CH1;
+        String CH2;
+        String CH3;
+        String CH4;
+
+        String PL;
+
+        String ADJ1;
+        String ADJ2;
+        String ADJ3;
+        String ADJ4;
+        String ADJ5;
+        String ADJ6;
+        String ADJ7;
+        String ADJ8;
+
+        String N0;
+        String N1;
+        String N2;
+        String N3;
+        String N4;
+        String N5;
+        String N6;
+        String N7;
+        String N8;
+        String N9;
+
+
+
+        String NUM1;
+        String NUM2;
+
+        String ADV1;
+        String ADV2;
+
+        String WEATHER1;
         switch(str)
         {
             case "Ride to the Airport":
-                String CH1 = chars.get(0);
-                String CH2 = chars.get(1);
-                String CH3 = chars.get(2);
-                String CH4 = chars.get(3);
+                CH1 = chars.get(0);
+                CH2 = chars.get(1);
+                CH3 = chars.get(2);
+                CH4 = chars.get(3);
                 
-                String PL = places.get(0);
+                PL = places.get(0);
                 
-                String ADJ1 = adjs.get(0);
-                String ADJ2 = adjs.get(1);
-                String ADJ3 = adjs.get(2);
-                String ADJ4 = adjs.get(3);
-                String ADJ5 = adjs.get(4);
-                String ADJ6 = adjs.get(5);
-                String ADJ7 = adjs.get(6);
-                String ADJ8 = adjs.get(7);
+                ADJ1 = adjs.get(0);
+                ADJ2 = adjs.get(1);
+                ADJ3 = adjs.get(2);
+                ADJ4 = adjs.get(3);
+                ADJ5 = adjs.get(4);
+                ADJ6 = adjs.get(5);
+                ADJ7 = adjs.get(6);
+                ADJ8 = adjs.get(7);
                 
-                String N0 = nouns.get(0);
-                String N1 = nouns.get(1);
-                String N2 = nouns.get(2);
-                String N3 = nouns.get(3);
-                String N4 = nouns.get(4);
-                String N5 = nouns.get(5);
-                String N6 = nouns.get(6);
-                String N7 = nouns.get(7);
-                String N8 = nouns.get(8);
-                String N9 = nouns.get(9);
-                
+                N0 = nouns.get(0);
+                N1 = nouns.get(1);
+                N2 = nouns.get(2);
+                N3 = nouns.get(3);
+                N4 = nouns.get(4);
+                N5 = nouns.get(5);
+                N6 = nouns.get(6);
+                N7 = nouns.get(7);
+                N8 = nouns.get(8);
+                N9 = nouns.get(9);
 
-                
-                String NUM1 = nums.get(0);
-                String NUM2 = nums.get(1);
-                
-                String ADV1 = advs.get(0);
-                String ADV2 = advs.get(1);
-                
-                String WEATHER1 = weathers.get(0);
+                NUM1 = nums.get(0);
+                NUM2 = nums.get(1);
 
-
+                ADV1 = advs.get(0);
+                ADV2 = advs.get(1);
+                
+                WEATHER1 = weathers.get(0);
 
                 text = "<font size='48'><em>Ride to the Airport</em></font> <br/> <br/>" +
                         tab + "One day, <font color='#0000EE'>" + CH1 + "</font> and <font color='#0000EE'>"
@@ -130,6 +179,21 @@ public class BookContent {
 
 
                 break;
+            case "Lunchtime":
+                ADJ1 = adjs.get(0);
+                ADJ2 = adjs.get(1);
+                N0 = nouns.get(0);
+                CH1 = chars.get(0);
+                CH2 = chars.get(1);
+                ADV1 = advs.get(0);
+                text = "<font size='48'><em>Lunchtime</em></font> <br/> <br/>" +
+                        tab + "It was Friday and it was finally lunchtime! <font color='#0000EE'>" + CH1 + "</font>"
+                        + " hadn't eaten breakfast and was really <font color='#BB0000'>" + ADJ2 + "</font> and couldn't wait to eat. <font color='#0000EE'>" + CH2 + "</font> was " +
+                        "waiting <font color='#009944'>" + ADV1 + "</font> for <font color='#0000EE'>" + CH1 + "</font> while" +
+                        " reading the lunch menu. \"I think I'll get a <font color='#BB0000'>" + ADJ1 + "</font> <font color='#8F29C8'>" +
+                        N0 + "</font>, said <font color='#0000EE'>" + CH2 + "</font>.\"";
+                break;
+
             default:
                 break;
         }

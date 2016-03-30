@@ -15,22 +15,27 @@ import android.widget.Toast;
 
 public class NewStoryActivity extends AppCompatActivity {
 
-    Button storyButton1;
+    private Button storyButton1;
+    private Button storyButton2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_story);
         storyButton1 = (Button)findViewById(R.id.story1Button);
         storyButton1.setTextColor(Color.BLACK);
+        storyButton2 = (Button)findViewById(R.id.story2Button);
+        storyButton2.setTextColor(Color.BLACK);
 
 
 
     }
+
     @Override
     public void onResume()
     {
         super.onResume();
         storyButton1.setTextColor(Color.BLACK);
+        storyButton2.setTextColor(Color.BLACK);
     }
 
     public void goToSelections(View view)
@@ -40,6 +45,14 @@ public class NewStoryActivity extends AppCompatActivity {
             storyButton1.setTextColor(Color.WHITE);
             BookContent.setTitle("Ride to the Airport");
             BookContent.generateGrammarTypes("Ride to the Airport");
+            intent = new Intent(this, CharacterSelectionActivity.class);
+            startActivity(intent);
+            finish();
+        }
+        if(view.getId() == R.id.story2Button) {
+            storyButton2.setTextColor(Color.WHITE);
+            BookContent.setTitle("Lunchtime");
+            BookContent.generateGrammarTypes("Lunchtime");
             intent = new Intent(this, CharacterSelectionActivity.class);
             startActivity(intent);
             finish();

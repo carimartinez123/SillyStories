@@ -36,7 +36,7 @@
         <Button
             android:layout_weight="1"
             android:layout_height="0dip"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:text="@string/story1"
             android:id="@+id/story1Button"
             android:textSize="@dimen/text"
@@ -48,11 +48,11 @@
         <Button
             android:layout_weight="1"
             android:layout_height="0dip"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:text="@string/story2"
             android:id="@+id/story2Button"
             android:textSize="@dimen/text"
-            android:onClick="unimplemented"
+            android:onClick="goToSelections"
             style="@style/redButtonStyle"
             android:layout_gravity="center_horizontal"
             android:layout_margin="5dp" />
@@ -60,7 +60,7 @@
         <Button
             android:layout_weight="1"
             android:layout_height="0dip"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:text="@string/story3"
             android:id="@+id/story3Button"
             android:textSize="@dimen/text"
@@ -72,7 +72,7 @@
         <Button
             android:layout_weight="1"
             android:layout_height="0dip"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:text="@string/story4"
             android:id="@+id/story4Button"
             android:textSize="@dimen/text"
@@ -84,7 +84,7 @@
         <Button
             android:layout_weight="1"
             android:layout_height="0dip"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:text="@string/story5"
             android:id="@+id/story5Button"
             android:textSize="@dimen/text"
@@ -96,7 +96,7 @@
         <Button
             android:layout_weight="1"
             android:layout_height="0dip"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:text="@string/story6"
             android:id="@+id/story6Button"
             android:textSize="@dimen/text"
@@ -108,7 +108,7 @@
         <Button
             android:layout_weight="1"
             android:layout_height="0dip"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:text="@string/story7"
             android:id="@+id/story7Button"
             android:textSize="@dimen/text"
@@ -120,7 +120,7 @@
         <Button
             android:layout_weight="1"
             android:layout_height="0dip"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:text="@string/story8"
             android:id="@+id/story8Button"
             android:textSize="@dimen/text"
@@ -132,7 +132,7 @@
         <Button
             android:layout_weight="1"
             android:layout_height="0dip"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:text="@string/story9"
             android:id="@+id/story9Button"
             android:textSize="@dimen/text"
@@ -144,7 +144,7 @@
         <Button
             android:layout_weight="1"
             android:layout_height="0dip"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:text="@string/story10"
             android:id="@+id/story10Button"
             android:textSize="@dimen/text"

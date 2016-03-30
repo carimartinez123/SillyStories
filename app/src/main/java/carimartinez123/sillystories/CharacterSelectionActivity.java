@@ -12,6 +12,10 @@ import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Random;
+
 public class CharacterSelectionActivity extends AppCompatActivity {
 
     private final int SELECTABLE_CHARS = 9;
@@ -43,6 +47,7 @@ public class CharacterSelectionActivity extends AppCompatActivity {
     private boolean [] charSelected = new boolean[SELECTABLE_CHARS];
     private TypedArray imgs;
     private Button doneButton;
+    private ArrayList<String> charOptions;
     
     private TextView charNum;
     @Override
@@ -51,7 +56,7 @@ public class CharacterSelectionActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_character_selection);
         Resources res = getResources();
-        chars = res.getStringArray(R.array.char_array);
+        //chars = res.getStringArray(R.array.char_array);
         imgs = res.obtainTypedArray(R.array.char_imgs);
 
         button0 = (ImageButton)findViewById(R.id.charButton0);
@@ -106,12 +111,11 @@ public class CharacterSelectionActivity extends AppCompatActivity {
         charFrames[7] = charFrame7;
         charFrames[8] = charFrame8;
 
+        charOptions = new ArrayList<>(Arrays.asList(res.getStringArray(R.array.char_array)));
+        chars = new String[SELECTABLE_CHARS];
 
-        /*for(int i = 0; i < buttons.length; i++)
-        {
-            buttons[i].setBackground(imgs.getDrawable(i));
-        }
-        */
+        randomizeChars(charOptions, chars);
+
         updateCharNum();
     }
     @Override
@@ -196,6 +200,28 @@ public class CharacterSelectionActivity extends AppCompatActivity {
                 finish();
             }
         }
+
+    private void randomizeChars(ArrayList<String> options, String[] words)
+    {
+        Random rnd = new Random();
+        int idx;
+        int randIdx;
+        ArrayList<Integer> indices = new ArrayList();
+        for(int i = 0; i < options.size(); i++)
+        {
+            indices.add(i);
+        }
+        for(int i = 0; i < words.length; i++)
+        {
+            randIdx = rnd.nextInt(indices.size());
+            idx = indices.get(randIdx);
+            words[i] = options.get(idx);
+            buttons[i].setBackground(imgs.getDrawable(idx));
+            indices.remove((Integer)idx);
+
+        }
+    }
+
 
     
 

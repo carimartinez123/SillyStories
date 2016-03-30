@@ -20,6 +20,15 @@
         <item>piano</item>
         <item>soup</item>
         <item>dinosaur</item>
+        <item>banana</item>
+        <item>crocodile</item>
+        <item>dragon</item>
+        <item>feather</item>
+        <item>donut</item>
+        <item>spaghetti</item>
+        <item>shadow</item>
+        <item>guppy</item>
+        <item>cactus</item>
     </string-array>
 
     <string-array name="char_array">
@@ -32,7 +41,6 @@
         <item>Splat Girl</item>
         <item>Link</item>
         <item>Zelda</item>
-        <item>Grandma</item>
         <item>Skye</item>
         <item>Rosie</item>
         <item>Senji</item>
@@ -49,6 +57,9 @@
         <item>@drawable/splatoon_girl</item>
         <item>@drawable/link</item>
         <item>@drawable/zelda</item>
+        <item>@drawable/skye</item>
+        <item>@drawable/rosie</item>
+        <item>@drawable/senji</item>
     </array>
 
 
@@ -64,10 +75,21 @@
         <item>crazily</item>
         <item>softly</item>
         <item>proudly</item>
+        <item>calmly</item>
         <item>goofily</item>
+        <item>tearfully</item>
+        <item>magically</item>
+        <item>merrily</item>
+        <item>sleepily</item>
     </string-array>
 
     <string-array name="adj_array">
+        <item>scaly</item>
+        <item>fishy</item>
+        <item>delicious</item>
+        <item>chunky</item>
+        <item>crunchy</item>
+        <item>lovely</item>
         <item>suspicious</item>
         <item>cozy</item>
         <item>stinky</item>
@@ -80,6 +102,9 @@
         <item>pickled</item>
         <item>grumpy</item>
         <item>spiky</item>
+        <item>fascinating</item>
+        <item>gigantic</item>
+        <item>slimy</item>
     </string-array>
 
     <string-array name="num_array">
