@@ -53,7 +53,7 @@ public class BookActivity extends AppCompatActivity {
 
 
         Intent restartIntent = new Intent(this, MainActivity.class);
-        restartIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //Set this flag
+        restartIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(restartIntent);
         finish();
 

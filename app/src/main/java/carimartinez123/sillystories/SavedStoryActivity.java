@@ -29,8 +29,7 @@ public class SavedStoryActivity extends AppCompatActivity {
     private static File selectedFile = null;
     private static ArrayList<String> filenameList;
     private static ListView savedStoryListView;
-    private Button startStoryButton;
-    private Button deleteStoryButton;
+
 
 
 
@@ -38,13 +37,10 @@ public class SavedStoryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saved_story);
-        startStoryButton = (Button) findViewById(R.id.startStoryButton);
-        deleteStoryButton = (Button) findViewById(R.id.deleteStoryButton);
-
-
         savedStoryListView = (ListView) findViewById(R.id.savedStoryListView);
-
         initListView();
+        savedStoryListView.setItemChecked(0, true);
+        savedStoryListView.performItemClick(savedStoryListView.getSelectedView(), 0, 0);
 
     }
 
@@ -154,22 +150,28 @@ public class SavedStoryActivity extends AppCompatActivity {
                         adapter.notifyDataSetChanged();
                         dialog.dismiss();
                         initListView();
-                        recreate();
+                        if (filenameList.size() < 1) {
+                            restart();
+                        } else {
+                            recreate();
+                        }
                     }
 
                 })
-
-
-
                 .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-
                         dialog.dismiss();
-
                     }
                 })
                 .create();
         return deleteDialog;
+    }
 
+    public void restart()
+    {
+        Intent restartIntent = new Intent(this, MainActivity.class);
+        restartIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(restartIntent);
+        finish();
     }
 }
