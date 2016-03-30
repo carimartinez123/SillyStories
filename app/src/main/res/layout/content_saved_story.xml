@@ -17,7 +17,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:weightSum="4">
+        android:weightSum="5">
 
         <TextView
             android:layout_width="match_parent"
@@ -25,30 +25,30 @@
             android:layout_height="0dip"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Pick a saved story:"
+            android:textStyle="bold"
             android:id="@+id/pickSavedStoryText"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="54dp"
             android:textSize="@dimen/text_large" />
 
-        <Spinner
+        <ListView
             android:layout_width="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:layout_height="0dip"
-            android:id="@+id/savedStorySpinner"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:spinnerMode="dropdown" />
+            android:divider="@android:color/transparent"
+            android:dividerHeight="@dimen/text_small"
+            android:id="@+id/savedStoryListView"
+            android:choiceMode="singleChoice" />
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
             android:layout_height="0dip"></FrameLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="1.5"
             android:layout_height="0dip"
             android:padding="@dimen/activity_horizontal_margin"
             android:weightSum="5">

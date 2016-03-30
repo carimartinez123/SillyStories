@@ -74,6 +74,7 @@ public class BookActivity extends AppCompatActivity {
             writer.close();
             Toast savedToast = Toast.makeText(BookActivity.this, "Story saved!", Toast.LENGTH_LONG);
             savedToast.show();
+            saveButton.setEnabled(false);
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
