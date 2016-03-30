@@ -43,6 +43,7 @@ public class SavedStoryActivity extends AppCompatActivity {
 
 
         savedStoryListView = (ListView) findViewById(R.id.savedStoryListView);
+
         initListView();
 
     }
@@ -78,7 +79,7 @@ public class SavedStoryActivity extends AppCompatActivity {
     public void startBook(View v){
         if(selectedFilename == null)
         {
-            Toast selectToast = Toast.makeText(this, "Pick a story!", Toast.LENGTH_LONG);
+            Toast selectToast = Toast.makeText(this, "Pick a story!", Toast.LENGTH_SHORT);
             selectToast.show();
 
         }
@@ -123,25 +124,20 @@ public class SavedStoryActivity extends AppCompatActivity {
 
        if(selectedFile == null)
        {
-           Toast selectToast = Toast.makeText(this, "Pick a story!", Toast.LENGTH_LONG);
+           Toast selectToast = Toast.makeText(this, "Pick a story!", Toast.LENGTH_SHORT);
            selectToast.show();
        }
        else{
 
            AlertDialog confirmDeleteBox = AskOption(selectedFile.getName());
            confirmDeleteBox.show();
-           initListView();
-           recreate();
+
 
 
        }
 
     }
 
-    public static void setSelectedFile(File selectedFile) {
-        SavedStoryActivity.selectedFile = selectedFile;
-
-    }
 
     private AlertDialog AskOption(String filename) {
         AlertDialog deleteDialog =new AlertDialog.Builder(this)
@@ -157,6 +153,7 @@ public class SavedStoryActivity extends AppCompatActivity {
                         filenameList.remove(selectedFile.getName());
                         adapter.notifyDataSetChanged();
                         dialog.dismiss();
+                        initListView();
                         recreate();
                     }
 
