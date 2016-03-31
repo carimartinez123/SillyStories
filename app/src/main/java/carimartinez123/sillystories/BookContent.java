@@ -134,7 +134,7 @@ public class BookContent {
                 text = "<font size='48'><em>Ride to the Airport</em></font> <br/> <br/>" +
                         tab + "One day, <font color='#0000EE'>" + CH1 + "</font> and <font color='#0000EE'>"
                         + CH2 + "</font> got in their <font color='#8F29C8'>" + N0 + "</font> to get to the airport. They were going on a trip to <font color='#CC5509'>"
-                        + PL + "</font>, and they were very <font color='#BB0000'>" + ADJ1 + "</font>.  They were riding along <font color='#009944'>" + ADV1 + "</font> " +
+                        + PL + "</font>, and they were feeling very <font color='#BB0000'>" + ADJ1 + "</font>.  They were riding along <font color='#009944'>" + ADV1 + "</font> " +
                         "when all of a sudden <font color='#0000EE'>" + CH1 + "</font> said, \"Oh no! I forgot my <font color='#BB0000'>" + ADJ2 +
                         "</font> <font color='#8F29C8'>" + N1 + "</font>!\" So, they turned their <font color='#8F29C8'>" + N0 + "</font> around " +
                         "and started back to the house.<br/><br/>  " +
