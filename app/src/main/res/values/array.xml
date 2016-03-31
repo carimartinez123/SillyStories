@@ -32,15 +32,13 @@
     </string-array>
 
     <string-array name="char_array">
-        <item>Starfire</item>
-        <item>Beast Boy</item>
-        <item>Raven</item>
-        <item>Cyborg</item>
-        <item>Robin</item>
-        <item>Squid Boy</item>
-        <item>Splat Girl</item>
-        <item>Link</item>
-        <item>Zelda</item>
+        <item>Lobster</item>
+        <item>Duck</item>
+        <item>Squishy</item>
+        <item>Sneaky Snake</item>
+        <item>Alli</item>
+        <item>Raffie</item>
+        <item>Spike</item>
         <item>Skye</item>
         <item>Rosie</item>
         <item>Senji</item>
@@ -48,15 +46,13 @@
 
 
     <array name="char_imgs">
-        <item>@drawable/starfire</item>
-        <item>@drawable/beastboy</item>
-        <item>@drawable/raven</item>
-        <item>@drawable/cyborg</item>
-        <item>@drawable/robin</item>
-        <item>@drawable/splatoon_boy</item>
-        <item>@drawable/splatoon_girl</item>
-        <item>@drawable/link</item>
-        <item>@drawable/zelda</item>
+        <item>@drawable/lobster</item>
+        <item>@drawable/duck</item>
+        <item>@drawable/squishy</item>
+        <item>@drawable/snake</item>
+        <item>@drawable/alli</item>
+        <item>@drawable/raffie</item>
+        <item>@drawable/spike</item>
         <item>@drawable/skye</item>
         <item>@drawable/rosie</item>
         <item>@drawable/senji</item>

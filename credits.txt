@@ -1,10 +1,15 @@
 Images:
-http://www.cartoonnetwork.com/shows/teen-titans-go/characters/index.html
-http://splatoonwiki.org/wiki/Splatoon/Gallery
-http://zeldawiki.org/Gallery:Link
-http://zeldawiki.org/Gallery:Zelda
+https://www.wpclipart.com/cartoon/animals/amphibians/crocodile_sitting_cartoon.png
+https://www.wpclipart.com/cartoon/animals/amphibians/lobster_cartoon.png.html
+https://www.wpclipart.com/cartoon/animals/fish/cute_fish/blowfish_cartoon.png.html
+https://www.wpclipart.com/cartoon/animals/octopus/octopus_simple_purple.png.html
+https://www.wpclipart.com/cartoon/animals/snake/rattlesnake_cartoon.png.html
+https://www.wpclipart.com/cartoon/animals/giraffe/Giraffe_student.png.html
+https://www.wpclipart.com/cartoon/animals/bird/duck/duck_cartoon_2.png.html
+
 Code for reading text file:
 http://stackoverflow.com/questions/326390/how-to-create-a-java-string-from-the-contents-of-a-file
+
 
 Image for icon:
 https://commons.wikimedia.org/wiki/File:Smiley_green_alien.svg

@@ -174,7 +174,7 @@ public class CharacterSelectionActivity extends AppCompatActivity {
 
         if (!charSelected[index_pressed] && needWords) {
             charSelected[index_pressed] = true;
-            charFrames[index_pressed].setBackgroundColor(Color.YELLOW);
+            charFrames[index_pressed].setBackgroundColor(Color.RED);
             BookContent.getChars().add(chars[index_pressed]);
         } else {
             if (charSelected[index_pressed]) {
